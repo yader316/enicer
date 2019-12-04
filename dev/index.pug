@@ -1,0 +1,47 @@
+extends pages/include/template
+append config
+  -pageTitle='Home'
+prepend styles
+  link(rel="stylesheet", href="css/fonts.css")
+  link(rel="stylesheet", href="slick/slick.css")
+  link(rel="stylesheet", href="slick/slick-theme.css")
+block content
+  header.header-container.d-flex.container
+    figure.header-container__imgContainer
+      img(src="img/logo-enicer.png", alt="").header-container__img  
+    +menu
+  section.slider
+    .slider__automatico
+      .slider__container
+        img(src="img/bateria-trojan.png", alt="").slider__img
+      .slider__container
+        img(src="img/paneles.png", alt="").slider__img
+      .slider__container
+        img(src="img/kit-3600-w-d.png").slider__img
+      .slider__container
+        img(src="img/paneles-solares.png", alt="").slider__img
+  section.history-container.d-flex-direction
+    .history-container__info.d-flex-direction.container
+      h1.history-container__title Bienvenidos a ENICER S.A
+      p.history-container__subtitle (empresa nicaragüense de energía renovable) 
+      .history-container__linea.border-linea
+      p.history-container__paragraph 
+        | ENICER es una empresa líder especializada en la planificación, diseño de sistemas, suministro, instalación, mantenimiento preventivo y servicios de reparación de equipos de energías renovables, brindándole a sus clientes apoyo técnico total.
+    .history-container__card-container.container
+      .history-container__card
+        +cardHistory('historia','ENICER es una empresa que ha instalado miles de sistemas de energía renovable en comunidades rurales a través de Nicaragua desde sus comienzos en 1982.','stats-bars2')
+      .history-container__card
+        +cardHistory('productos','ENICER cuenta con una amplia variedad de productos y servicios que te ayudaran a optimizar el consumo de enregia electrica en tu hogar o empresa, dentro de nuestro sitio web encontraras nustro catalogo el linea donde podras conocer un poco mas de los productos que tenemos para ti.','cog')
+      .history-container__card
+        +cardHistory('pregunta frecuente','Conoce las respuestas a las preguntas mas frecuentes acerca de los distintos tipos de energias renovables, estudios de eficiencia energetica, vida util de los productos, ahorro de energia, mantenimiento de equipos solares. Aclara tus dudas y conoce un poco mas de este tema.','clipboard')
+      .history-container__card
+        +cardHistory('eficiencia energetica.','Apoyar el ahorro energético desde los comercios y las empresas ahora también es posible sin necesidad de cambiar los artefactos. Esas lámparas que se creían irremplazables se pueden reemplazar por leds, una tecnología bajo consumo muy superior a los tubos fluorescentes y sus variantes a rosca.','meter')
+block script
+  script(src="http://code.jquery.com/jquery-latest.js")
+  script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+  script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+  script(type="text/javascript" src="slick/slick.min.js")
+  script(src="js/main.js")
+  script(src="js/sliderAutomatico.js")
+  script(src="js/sliderCard.js")
+  script(src="js/sliderCardResponsive.js")

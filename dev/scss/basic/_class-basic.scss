@@ -1,0 +1,22 @@
+.container{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.d-flex{
+  display: flex;
+}
+.d-flex-direction{
+  display: flex;
+  flex-direction: column;
+}
+.d-grid{
+  display: grid;
+}
+.body-container{
+  overflow-x: hidden;
+}
+.border-linea{
+  border-bottom: 2px solid map-get($color-pages, color-azul);
+  margin: .5rem;
+}

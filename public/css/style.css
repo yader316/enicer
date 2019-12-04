@@ -1,0 +1,453 @@
+/* line 1, dev/scss/style.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 1, dev/scss/basic/_class-basic.scss */
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 6, dev/scss/basic/_class-basic.scss */
+.d-flex {
+  display: -webkit-box;
+  display: flex;
+}
+
+/* line 9, dev/scss/basic/_class-basic.scss */
+.d-flex-direction {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+/* line 13, dev/scss/basic/_class-basic.scss */
+.d-grid {
+  display: grid;
+}
+
+/* line 16, dev/scss/basic/_class-basic.scss */
+.body-container {
+  overflow-x: hidden;
+}
+
+/* line 19, dev/scss/basic/_class-basic.scss */
+.border-linea {
+  border-bottom: 2px solid #1c79be;
+  margin: .5rem;
+}
+
+/* line 1, dev/scss/componentes/_menu.scss */
+.menu {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 3, dev/scss/componentes/_menu.scss */
+.menu__bar {
+  display: none;
+}
+
+/* line 6, dev/scss/componentes/_menu.scss */
+.menu__bt {
+  text-transform: uppercase;
+}
+
+/* line 9, dev/scss/componentes/_menu.scss */
+.menu__navigation {
+  background-color: #1c79be;
+  z-index: 1000;
+  margin: 20px auto;
+}
+
+/* line 14, dev/scss/componentes/_menu.scss */
+.menu__menu-container {
+  list-style: none;
+}
+
+/* line 17, dev/scss/componentes/_menu.scss */
+.menu__items {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 21, dev/scss/componentes/_menu.scss */
+.menu__items:hover {
+  background-color: #fda800;
+}
+
+/* line 24, dev/scss/componentes/_menu.scss */
+.menu__items:hover .menu__children {
+  display: block;
+}
+
+/* line 28, dev/scss/componentes/_menu.scss */
+.menu__link {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+/* line 35, dev/scss/componentes/_menu.scss */
+.menu__icons {
+  margin-right: 10px;
+}
+
+/* line 38, dev/scss/componentes/_menu.scss */
+.menu__children {
+  display: none;
+  background-color: #215b75;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+/* line 45, dev/scss/componentes/_menu.scss */
+.menu__itemsChildren {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 50, dev/scss/componentes/_menu.scss */
+.menu__linkChildren {
+  display: block;
+}
+
+/* line 53, dev/scss/componentes/_menu.scss */
+.menu__iconsChildren {
+  float: right;
+  position: relative;
+  top: 3px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* line 60, dev/scss/componentes/_menu.scss */
+.menu__caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+/* line 1, dev/scss/componentes/_card-history.scss */
+.cardHistory {
+  margin: 0 1rem;
+}
+
+/* line 3, dev/scss/componentes/_card-history.scss */
+.cardHistory__title {
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+/* line 7, dev/scss/componentes/_card-history.scss */
+.cardHistory__icons {
+  margin-right: 1rem;
+  color: #1c79be;
+}
+
+/* line 11, dev/scss/componentes/_card-history.scss */
+.cardHistory__description {
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+/* line 15, dev/scss/style.scss */
+.header-container {
+  margin-bottom: 2rem;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 18, dev/scss/style.scss */
+.header-container__imgContainer {
+  width: 30%;
+}
+
+/* line 21, dev/scss/style.scss */
+.header-container__img {
+  width: 100%;
+}
+
+/* line 25, dev/scss/style.scss */
+.slider {
+  margin-bottom: 4rem;
+}
+
+/* line 27, dev/scss/style.scss */
+.slider__img {
+  width: 100%;
+  height: 500px;
+}
+
+/* line 32, dev/scss/style.scss */
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+}
+
+/* line 38, dev/scss/style.scss */
+.slick-next {
+  right: 100px;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 43, dev/scss/style.scss */
+.history-container {
+  margin-bottom: 3rem;
+}
+
+/* line 45, dev/scss/style.scss */
+.history-container__info {
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 49, dev/scss/style.scss */
+.history-container__title {
+  font-size: 2.5rem;
+}
+
+/* line 52, dev/scss/style.scss */
+.history-container__subtitle {
+  text-transform: capitalize;
+}
+
+/* line 55, dev/scss/style.scss */
+.history-container__paragraph {
+  width: 80%;
+  text-align: center;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+
+/* line 61, dev/scss/style.scss */
+.history-container__linea {
+  width: 20%;
+  margin-left: 2.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  /* line 68, dev/scss/style.scss */
+  .header-container {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  /* line 72, dev/scss/style.scss */
+  .header-container__imgContainer {
+    display: none;
+  }
+  /* line 76, dev/scss/style.scss */
+  .history-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  /* line 79, dev/scss/style.scss */
+  .history-container__title {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  /* line 83, dev/scss/style.scss */
+  .history-container__paragraph {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  /* line 87, dev/scss/style.scss */
+  .history-container__imgContainer {
+    width: 100%;
+  }
+  /* line 93, dev/scss/style.scss */
+  .menu__bar {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #1c79be;
+  }
+  /* line 100, dev/scss/style.scss */
+  .menu__bar .menu__bt {
+    display: block;
+    padding: 20px 36px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* line 109, dev/scss/style.scss */
+  .menu__bar .menu__icons {
+    float: right;
+    font-size: 40px;
+  }
+  /* line 113, dev/scss/style.scss */
+  .menu__navigation {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    top: 80px;
+    background-color: #e3e052;
+    overflow: scroll;
+  }
+  /* line 123, dev/scss/style.scss */
+  .menu__items {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* line 126, dev/scss/style.scss */
+  .menu__items:hover {
+    background-color: #215b75;
+  }
+  /* line 129, dev/scss/style.scss */
+  .menu__items:hover .menu__children {
+    display: none;
+  }
+  /* line 133, dev/scss/style.scss */
+  .menu__icons {
+    color: white;
+  }
+  /* line 136, dev/scss/style.scss */
+  .menu__link {
+    display: block;
+  }
+  /* line 139, dev/scss/style.scss */
+  .menu__children {
+    width: 100%;
+    position: relative;
+    background-color: #bcba00;
+  }
+  /* line 144, dev/scss/style.scss */
+  .menu__linkChildren {
+    margin-left: 20px;
+  }
+  /* line 147, dev/scss/style.scss */
+  .menu__caret {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 153, dev/scss/style.scss */
+  .header-container {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  /* line 157, dev/scss/style.scss */
+  .header-container__imgContainer {
+    display: none;
+  }
+  /* line 161, dev/scss/style.scss */
+  .history-container {
+    width: 100%;
+    margin-top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 165, dev/scss/style.scss */
+  .history-container__info, .history-container__imgContainer {
+    width: 100%;
+  }
+  /* line 169, dev/scss/style.scss */
+  .history-container__img {
+    width: 60%;
+  }
+  /* line 172, dev/scss/style.scss */
+  .history-container__paragraph {
+    width: 100%;
+  }
+  /* line 175, dev/scss/style.scss */
+  .history-container__linea {
+    width: 50%;
+    margin-left: 2.2rem;
+  }
+  /* line 181, dev/scss/style.scss */
+  .menu__bar {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #1c79be;
+  }
+  /* line 188, dev/scss/style.scss */
+  .menu__bar .menu__bt {
+    display: block;
+    padding: 20px 36px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* line 197, dev/scss/style.scss */
+  .menu__bar .menu__icons {
+    float: right;
+    font-size: 40px;
+  }
+  /* line 201, dev/scss/style.scss */
+  .menu__navigation {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    top: 80px;
+    background-color: #e3e052;
+    overflow: scroll;
+  }
+  /* line 211, dev/scss/style.scss */
+  .menu__items {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* line 214, dev/scss/style.scss */
+  .menu__items:hover {
+    background-color: #215b75;
+  }
+  /* line 217, dev/scss/style.scss */
+  .menu__items:hover .menu__children {
+    display: none;
+  }
+  /* line 221, dev/scss/style.scss */
+  .menu__icons {
+    color: white;
+  }
+  /* line 224, dev/scss/style.scss */
+  .menu__link {
+    display: block;
+  }
+  /* line 227, dev/scss/style.scss */
+  .menu__children {
+    width: 100%;
+    position: relative;
+    background-color: #bcba00;
+  }
+  /* line 232, dev/scss/style.scss */
+  .menu__linkChildren {
+    margin-left: 20px;
+  }
+  /* line 235, dev/scss/style.scss */
+  .menu__caret {
+    float: right;
+  }
+}

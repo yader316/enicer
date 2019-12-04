@@ -1,0 +1,17 @@
+.cardHistory{
+  margin: 0 1rem;
+  &__title{
+    text-transform: capitalize;
+    padding: 1rem;
+  }
+  &__icons{
+    margin-right: 1rem;
+    color: map-get($color-pages, color-azul);
+  }
+  &__description{
+    text-align: justify;
+    padding: 0 2rem;
+
+  }
+
+}
