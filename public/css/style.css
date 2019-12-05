@@ -45,6 +45,20 @@
   margin: .5rem;
 }
 
+/* line 23, dev/scss/basic/_class-basic.scss */
+.buttonStyle {
+  padding: .5rem 2rem;
+  background-color: #1c79be;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* line 29, dev/scss/basic/_class-basic.scss */
+.buttonStyle:hover {
+  background-color: #6dc82b;
+}
+
 /* line 1, dev/scss/componentes/_menu.scss */
 .menu {
   -webkit-box-align: center;
@@ -83,7 +97,7 @@
 
 /* line 21, dev/scss/componentes/_menu.scss */
 .menu__items:hover {
-  background-color: #fda800;
+  background-color: #6dc82b;
 }
 
 /* line 24, dev/scss/componentes/_menu.scss */
@@ -93,6 +107,7 @@
 
 /* line 28, dev/scss/componentes/_menu.scss */
 .menu__link {
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   display: block;
   text-decoration: none;
@@ -100,12 +115,12 @@
   text-transform: capitalize;
 }
 
-/* line 35, dev/scss/componentes/_menu.scss */
+/* line 36, dev/scss/componentes/_menu.scss */
 .menu__icons {
   margin-right: 10px;
 }
 
-/* line 38, dev/scss/componentes/_menu.scss */
+/* line 39, dev/scss/componentes/_menu.scss */
 .menu__children {
   display: none;
   background-color: #215b75;
@@ -114,19 +129,19 @@
   z-index: 1000;
 }
 
-/* line 45, dev/scss/componentes/_menu.scss */
+/* line 46, dev/scss/componentes/_menu.scss */
 .menu__itemsChildren {
   display: block;
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-/* line 50, dev/scss/componentes/_menu.scss */
+/* line 51, dev/scss/componentes/_menu.scss */
 .menu__linkChildren {
   display: block;
 }
 
-/* line 53, dev/scss/componentes/_menu.scss */
+/* line 54, dev/scss/componentes/_menu.scss */
 .menu__iconsChildren {
   float: right;
   position: relative;
@@ -135,7 +150,7 @@
   margin-left: 10px;
 }
 
-/* line 60, dev/scss/componentes/_menu.scss */
+/* line 61, dev/scss/componentes/_menu.scss */
 .menu__caret {
   position: relative;
   top: 3px;
@@ -143,78 +158,283 @@
   margin-right: 0px;
 }
 
-/* line 1, dev/scss/componentes/_card-history.scss */
+/* line 2, dev/scss/componentes/_card-history.scss */
 .cardHistory {
   margin: 0 1rem;
 }
 
-/* line 3, dev/scss/componentes/_card-history.scss */
+/* line 4, dev/scss/componentes/_card-history.scss */
 .cardHistory__title {
+  font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
   padding: 1rem;
 }
 
-/* line 7, dev/scss/componentes/_card-history.scss */
+/* line 9, dev/scss/componentes/_card-history.scss */
 .cardHistory__icons {
   margin-right: 1rem;
   color: #1c79be;
 }
 
-/* line 11, dev/scss/componentes/_card-history.scss */
+/* line 13, dev/scss/componentes/_card-history.scss */
 .cardHistory__description {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   padding: 0 2rem;
 }
 
-/* line 15, dev/scss/style.scss */
+/* line 1, dev/scss/componentes/_contactUs.scss */
+.contact-container {
+  width: 100%;
+}
+
+/* line 3, dev/scss/componentes/_contactUs.scss */
+.contact-container__backgroundContactenos {
+  height: 300px;
+  background-image: url("../img/contactenos.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+/* line 12, dev/scss/componentes/_contactUs.scss */
+.contact-container__form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* line 16, dev/scss/componentes/_contactUs.scss */
+.contact-container__formInfo {
+  margin: 1rem;
+  justify-content: space-around;
+}
+
+/* line 20, dev/scss/componentes/_contactUs.scss */
+.contact-container__formTxtArea {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+/* line 23, dev/scss/componentes/_contactUs.scss */
+.contact-container__mensaje {
+  resize: none;
+  width: 80%;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  background-image: url("../img/bujia-panel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #1c79be;
+}
+
+/* line 36, dev/scss/componentes/_contactUs.scss */
+.contact-container__mensaje:focus {
+  border: 2px solid #6dc82b;
+  background: transparent;
+}
+
+/* line 41, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email, .contact-container__mensaje {
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  outline: none;
+  color: #6dc82b;
+  background-color: transparent;
+}
+
+/* line 51, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa::-webkit-input-placeholder, .contact-container__namePersona::-webkit-input-placeholder, .contact-container__telefono::-webkit-input-placeholder, .contact-container__email::-webkit-input-placeholder, .contact-container__mensaje::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::-moz-placeholder, .contact-container__namePersona::-moz-placeholder, .contact-container__telefono::-moz-placeholder, .contact-container__email::-moz-placeholder, .contact-container__mensaje::-moz-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa:-ms-input-placeholder, .contact-container__namePersona:-ms-input-placeholder, .contact-container__telefono:-ms-input-placeholder, .contact-container__email:-ms-input-placeholder, .contact-container__mensaje:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::-ms-input-placeholder, .contact-container__namePersona::-ms-input-placeholder, .contact-container__telefono::-ms-input-placeholder, .contact-container__email::-ms-input-placeholder, .contact-container__mensaje::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::placeholder, .contact-container__namePersona::placeholder, .contact-container__telefono::placeholder, .contact-container__email::placeholder, .contact-container__mensaje::placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+
+/* line 56, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email {
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #1c79be;
+}
+
+/* line 64, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa:focus, .contact-container__namePersona:focus, .contact-container__telefono:focus, .contact-container__email:focus {
+  border-bottom: 2px solid #6dc82b;
+}
+
+/* line 68, dev/scss/componentes/_contactUs.scss */
+.contact-container__btn {
+  text-transform: uppercase;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+/* line 73, dev/scss/componentes/_contactUs.scss */
+.contact-container__contactenos {
+  background-image: url("../img/nubes.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+/* line 82, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container, .contact-container__mapContainer {
+  width: 50%;
+}
+
+/* line 86, dev/scss/componentes/_contactUs.scss */
+.contact-container__map {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 91, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container, .contact-container__mapContainer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 95, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container {
+  padding-bottom: 2rem;
+}
+
+/* line 98, dev/scss/componentes/_contactUs.scss */
+.contact-container__title, .contact-container__subtitle {
+  text-transform: capitalize;
+}
+
+/* line 102, dev/scss/componentes/_contactUs.scss */
+.contact-container__title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+/* line 107, dev/scss/componentes/_contactUs.scss */
+.contact-container__linea {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+/* line 113, dev/scss/componentes/_contactUs.scss */
+.contact-container__subtitle {
+  align-self: flex-start;
+  margin: 0 4rem;
+}
+
+/* line 117, dev/scss/componentes/_contactUs.scss */
+.contact-container__description {
+  margin-left: 6rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* line 122, dev/scss/componentes/_contactUs.scss */
+.contact-container__title, .contact-container__subtitle, .contact-container__description {
+  color: white;
+}
+
+/* line 127, dev/scss/componentes/_contactUs.scss */
+.contact-container__icons {
+  color: #6dc82b;
+  margin-right: .5rem;
+}
+
+/* line 16, dev/scss/style.scss */
 .header-container {
   margin-bottom: 2rem;
+  margin-top: 1rem;
   -webkit-box-align: center;
           align-items: center;
 }
 
-/* line 18, dev/scss/style.scss */
-.header-container__imgContainer {
+/* line 20, dev/scss/style.scss */
+.header-container__menu {
+  width: 70%;
+}
+
+/* line 23, dev/scss/style.scss */
+.header-container__logoContainer {
   width: 30%;
 }
 
-/* line 21, dev/scss/style.scss */
+/* line 26, dev/scss/style.scss */
+.header-container__titleContainer {
+  width: 60%;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+/* line 31, dev/scss/style.scss */
+.header-container__imgContainer {
+  width: 40%;
+}
+
+/* line 34, dev/scss/style.scss */
 .header-container__img {
   width: 100%;
 }
 
-/* line 25, dev/scss/style.scss */
-.slider {
-  margin-bottom: 4rem;
-}
-
-/* line 27, dev/scss/style.scss */
-.slider__img {
-  width: 100%;
-  height: 500px;
-}
-
-/* line 32, dev/scss/style.scss */
-.slick-prev {
-  left: 100px;
-  z-index: 999;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 1rem;
-}
-
-/* line 38, dev/scss/style.scss */
-.slick-next {
-  right: 100px;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* line 43, dev/scss/style.scss */
-.history-container {
-  margin-bottom: 3rem;
+/* line 37, dev/scss/style.scss */
+.header-container__title {
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(green), to(yellow));
+  background: linear-gradient(green, yellow);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 3rem;
 }
 
 /* line 45, dev/scss/style.scss */
+.header-container__subtitle {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(green));
+  background: linear-gradient(blue, green);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* line 55, dev/scss/style.scss */
+.slider {
+  width: 100%;
+}
+
+/* line 57, dev/scss/style.scss */
+.slider__img {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 62, dev/scss/style.scss */
+.history-container {
+  padding: 4rem 0;
+  background-color: #f3f1f1ee;
+}
+
+/* line 65, dev/scss/style.scss */
 .history-container__info {
   -webkit-box-pack: center;
           justify-content: center;
@@ -222,68 +442,183 @@
           align-items: center;
 }
 
-/* line 49, dev/scss/style.scss */
+/* line 69, dev/scss/style.scss */
 .history-container__title {
   font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 52, dev/scss/style.scss */
+/* line 73, dev/scss/style.scss */
 .history-container__subtitle {
   text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 55, dev/scss/style.scss */
-.history-container__paragraph {
-  width: 80%;
-  text-align: center;
-  padding: 1rem 2rem;
-  margin-bottom: 3rem;
-}
-
-/* line 61, dev/scss/style.scss */
+/* line 77, dev/scss/style.scss */
 .history-container__linea {
   width: 20%;
   margin-left: 2.2rem;
+  margin-bottom: 3rem;
 }
 
-@media screen and (max-width: 1000px) {
-  /* line 68, dev/scss/style.scss */
+/* line 83, dev/scss/style.scss */
+.footer-container {
+  width: 100%;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding-top: 4rem;
+  background-color: #1c79be;
+  background-image: url("../img/bujia-panel.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* line 94, dev/scss/style.scss */
+.footer-container__infoContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* line 98, dev/scss/style.scss */
+.footer-container__title {
+  text-transform: capitalize;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 107, dev/scss/style.scss */
+.footer-container__menu, .footer-container__description {
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+/* line 112, dev/scss/style.scss */
+.footer-container__description {
+  padding-bottom: 2rem;
+  line-height: 1.5;
+  color: #e6e6e6;
+}
+
+/* line 117, dev/scss/style.scss */
+.footer-container__redes {
+  justify-content: space-around;
+}
+
+/* line 120, dev/scss/style.scss */
+.footer-container__icons {
+  font-size: 40px;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 127, dev/scss/style.scss */
+.footer-container__items {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+/* line 131, dev/scss/style.scss */
+.footer-container__description, .footer-container__link {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 136, dev/scss/style.scss */
+.footer-container__link {
+  color: #1c79be;
+  background-color: #e6e6e6;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* line 143, dev/scss/style.scss */
+.footer-container__link:hover {
+  color: #6dc82b;
+  background-color: #215b75;
+}
+
+/* line 148, dev/scss/style.scss */
+.footer-container__footerTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* line 152, dev/scss/style.scss */
+.footer-container__footerSpan {
+  font-weight: lighter;
+}
+
+/* line 157, dev/scss/style.scss */
+.icon-whatsapp:hover {
+  color: #6dc82b;
+}
+
+/* line 162, dev/scss/style.scss */
+.icon-facebook:hover {
+  color: #215b75;
+}
+
+/* line 167, dev/scss/style.scss */
+.icon-youtube:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 173, dev/scss/style.scss */
   .header-container {
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 72, dev/scss/style.scss */
-  .header-container__imgContainer {
+  /* line 177, dev/scss/style.scss */
+  .header-container__logoContainer {
     display: none;
+    width: 0;
   }
-  /* line 76, dev/scss/style.scss */
+  /* line 181, dev/scss/style.scss */
+  .header-container__menu {
+    width: 100%;
+  }
+  /* line 185, dev/scss/style.scss */
   .history-container {
     width: 100%;
     margin-top: 2rem;
   }
-  /* line 79, dev/scss/style.scss */
+  /* line 188, dev/scss/style.scss */
   .history-container__title {
     font-size: 1.5rem;
     margin-left: 2rem;
   }
-  /* line 83, dev/scss/style.scss */
+  /* line 192, dev/scss/style.scss */
   .history-container__paragraph {
     width: 100%;
     padding: 1rem 2rem;
   }
-  /* line 87, dev/scss/style.scss */
+  /* line 196, dev/scss/style.scss */
   .history-container__imgContainer {
     width: 100%;
   }
-  /* line 93, dev/scss/style.scss */
+  /* line 200, dev/scss/style.scss */
+  .menu {
+    margin-top: 50px;
+  }
+  /* line 202, dev/scss/style.scss */
   .menu__bar {
     display: block;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
     background-color: #1c79be;
   }
-  /* line 100, dev/scss/style.scss */
+  /* line 209, dev/scss/style.scss */
   .menu__bar .menu__bt {
     display: block;
     padding: 20px 36px;
@@ -293,12 +628,12 @@
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 109, dev/scss/style.scss */
+  /* line 218, dev/scss/style.scss */
   .menu__bar .menu__icons {
     float: right;
     font-size: 40px;
   }
-  /* line 113, dev/scss/style.scss */
+  /* line 222, dev/scss/style.scss */
   .menu__navigation {
     width: 80%;
     height: calc(100% - 80px);
@@ -306,58 +641,101 @@
     right: 100%;
     margin: 0;
     top: 80px;
-    background-color: #e3e052;
+    background-color: #6dc82b;
     overflow: scroll;
   }
-  /* line 123, dev/scss/style.scss */
+  /* line 232, dev/scss/style.scss */
   .menu__items {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  /* line 126, dev/scss/style.scss */
-  .menu__items:hover {
-    background-color: #215b75;
-  }
-  /* line 129, dev/scss/style.scss */
+  /* line 235, dev/scss/style.scss */
   .menu__items:hover .menu__children {
     display: none;
   }
-  /* line 133, dev/scss/style.scss */
+  /* line 239, dev/scss/style.scss */
   .menu__icons {
     color: white;
   }
-  /* line 136, dev/scss/style.scss */
+  /* line 242, dev/scss/style.scss */
   .menu__link {
     display: block;
   }
-  /* line 139, dev/scss/style.scss */
+  /* line 245, dev/scss/style.scss */
   .menu__children {
     width: 100%;
     position: relative;
-    background-color: #bcba00;
   }
-  /* line 144, dev/scss/style.scss */
+  /* line 249, dev/scss/style.scss */
   .menu__linkChildren {
     margin-left: 20px;
   }
-  /* line 147, dev/scss/style.scss */
+  /* line 252, dev/scss/style.scss */
   .menu__caret {
     float: right;
+  }
+  /* line 256, dev/scss/style.scss */
+  .footer-container {
+    width: 100%;
+    padding: 0;
+    background-image: url("../img/nubes.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  /* line 264, dev/scss/style.scss */
+  .footer-container__infoContainer {
+    padding-top: 3rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 269, dev/scss/style.scss */
+  .footer-container__description {
+    margin: 3rem 1rem;
+    padding: 0;
+  }
+  /* line 273, dev/scss/style.scss */
+  .footer-container__menu {
+    padding: 0;
+  }
+  /* line 276, dev/scss/style.scss */
+  .footer-container__items {
+    margin: 2rem 0;
+  }
+  /* line 279, dev/scss/style.scss */
+  .footer-container__footer {
+    background-color: black;
+    width: 100%;
+  }
+  /* line 283, dev/scss/style.scss */
+  .footer-container__footerTitle {
+    color: white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 1rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  /* line 153, dev/scss/style.scss */
+  /* line 293, dev/scss/style.scss */
   .header-container {
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 157, dev/scss/style.scss */
-  .header-container__imgContainer {
+  /* line 297, dev/scss/style.scss */
+  .header-container__logoContainer {
     display: none;
   }
-  /* line 161, dev/scss/style.scss */
+  /* line 300, dev/scss/style.scss */
+  .header-container__menu {
+    width: 100%;
+  }
+  /* line 304, dev/scss/style.scss */
   .history-container {
     width: 100%;
     margin-top: 2rem;
@@ -365,31 +743,36 @@
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 165, dev/scss/style.scss */
+  /* line 308, dev/scss/style.scss */
   .history-container__info, .history-container__imgContainer {
     width: 100%;
   }
-  /* line 169, dev/scss/style.scss */
+  /* line 312, dev/scss/style.scss */
   .history-container__img {
     width: 60%;
   }
-  /* line 172, dev/scss/style.scss */
+  /* line 315, dev/scss/style.scss */
   .history-container__paragraph {
     width: 100%;
   }
-  /* line 175, dev/scss/style.scss */
+  /* line 318, dev/scss/style.scss */
   .history-container__linea {
     width: 50%;
     margin-left: 2.2rem;
   }
-  /* line 181, dev/scss/style.scss */
+  /* line 323, dev/scss/style.scss */
+  .menu {
+    margin-top: 50px;
+  }
+  /* line 325, dev/scss/style.scss */
   .menu__bar {
     display: block;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
     background-color: #1c79be;
   }
-  /* line 188, dev/scss/style.scss */
+  /* line 332, dev/scss/style.scss */
   .menu__bar .menu__bt {
     display: block;
     padding: 20px 36px;
@@ -399,12 +782,12 @@
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 197, dev/scss/style.scss */
+  /* line 341, dev/scss/style.scss */
   .menu__bar .menu__icons {
     float: right;
     font-size: 40px;
   }
-  /* line 201, dev/scss/style.scss */
+  /* line 345, dev/scss/style.scss */
   .menu__navigation {
     width: 80%;
     height: calc(100% - 80px);
@@ -412,42 +795,86 @@
     right: 100%;
     margin: 0;
     top: 80px;
-    background-color: #e3e052;
+    background-color: #6dc82b;
     overflow: scroll;
   }
-  /* line 211, dev/scss/style.scss */
+  /* line 355, dev/scss/style.scss */
   .menu__items {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  /* line 214, dev/scss/style.scss */
-  .menu__items:hover {
-    background-color: #215b75;
-  }
-  /* line 217, dev/scss/style.scss */
+  /* line 358, dev/scss/style.scss */
   .menu__items:hover .menu__children {
     display: none;
   }
-  /* line 221, dev/scss/style.scss */
+  /* line 362, dev/scss/style.scss */
   .menu__icons {
     color: white;
   }
-  /* line 224, dev/scss/style.scss */
+  /* line 365, dev/scss/style.scss */
   .menu__link {
     display: block;
   }
-  /* line 227, dev/scss/style.scss */
+  /* line 368, dev/scss/style.scss */
   .menu__children {
     width: 100%;
     position: relative;
-    background-color: #bcba00;
   }
-  /* line 232, dev/scss/style.scss */
+  /* line 372, dev/scss/style.scss */
   .menu__linkChildren {
     margin-left: 20px;
   }
-  /* line 235, dev/scss/style.scss */
+  /* line 375, dev/scss/style.scss */
   .menu__caret {
     float: right;
+  }
+  /* line 379, dev/scss/style.scss */
+  .footer-container {
+    width: 100%;
+    padding: 0;
+    background-image: url("../img/nubes.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  /* line 387, dev/scss/style.scss */
+  .footer-container__infoContainer {
+    padding-top: 3rem;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 393, dev/scss/style.scss */
+  .footer-container__description {
+    margin: 3rem 2rem;
+    padding: 0;
+    text-align: center;
+  }
+  /* line 398, dev/scss/style.scss */
+  .footer-container__menu {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  /* line 403, dev/scss/style.scss */
+  .footer-container__items {
+    margin: 2rem 0;
+  }
+  /* line 406, dev/scss/style.scss */
+  .footer-container__footer {
+    background-color: black;
+    width: 100%;
+  }
+  /* line 410, dev/scss/style.scss */
+  .footer-container__footerTitle {
+    color: white;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 1rem;
   }
 }

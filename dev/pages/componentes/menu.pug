@@ -4,13 +4,19 @@ mixin menu
       a(href="#").menu__bt #[span.menu__icons.icon-list2] enicer
     nav.menu__navigation
       ul.menu__menu-container
-        li.menu__items: a(href="#").menu__link #[span.menu__icons.icon-home] inicio
-        li.menu__items: a(href="#").menu__link #[span.menu__icons.icon-briefcase] trabajos
+        li.menu__items: a(href="../public/index.html").menu__link #[span.menu__icons.icon-home] inicio
         li.menu__items.subMenu 
           a(href="#").menu__link #[span.menu__icons.icon-rocket] proyectos #[span.menu__icons.menu__caret.icon-arrow-down6]
           ul.menu__children
-            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] SubElemento #1
-            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] SubElemento #2
-            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] SubElemento #3
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] SFV
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] conectado a la red
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] bomba de agua
+        li.menu__items.subMenu 
+          a(href="#").menu__link #[span.menu__icons.icon-cart] productos #[span.menu__icons.menu__caret.icon-arrow-down6]
+          ul.menu__children
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] paneles solares
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] baterias
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] inversor
+            li.menu__items.menu__itemsChildren: a(href="#").menu__link.menu__linkChildren #[span.menu__icons.menu__iconsChildren.icon-dot] bomba de agua
         li.menu__items: a(href="#").menu__link #[span.menu__icons.icon-earth] servicios
-        li.menu__items: a(href="#").menu__link #[span.menu__icons.icon-mail] contactenos    
+        li.menu__items: a(href="../public/contactUs.html").menu__link #[span.menu__icons.icon-mail] contactenos    

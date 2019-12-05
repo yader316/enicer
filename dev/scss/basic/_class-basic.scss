@@ -20,3 +20,13 @@
   border-bottom: 2px solid map-get($color-pages, color-azul);
   margin: .5rem;
 }
+.buttonStyle{
+  padding: .5rem 2rem;
+  background-color: map-get($color-pages, color-azul);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  &:hover{
+    background-color: map-get($color-pages, color-verde);
+  }
+}

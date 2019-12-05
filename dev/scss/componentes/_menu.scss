@@ -19,13 +19,14 @@
     position: relative;
     transition: all .3s ease;
     &:hover{
-      background-color:map-get($color-pages, color-naranja);
+      background-color:map-get($color-pages, color-verde);
     }
     &:hover .menu__children{
       display: block;
     }
   }
   &__link{
+    font-family: Arial, Helvetica, sans-serif;
     color:#fff;
     display:block;
     text-decoration:none;

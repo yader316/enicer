@@ -5,11 +5,17 @@ prepend styles
   link(rel="stylesheet", href="css/fonts.css")
   link(rel="stylesheet", href="slick/slick.css")
   link(rel="stylesheet", href="slick/slick-theme.css")
+
 block content
   header.header-container.d-flex.container
-    figure.header-container__imgContainer
-      img(src="img/logo-enicer.png", alt="").header-container__img  
-    +menu
+    .header-container__logoContainer.d-flex
+      figure.header-container__imgContainer
+        img(src="img/logo-enicer-2.png", alt="").header-container__img
+      .header-container__titleContainer
+        h1.header-container__title enicer
+        p.header-container__subtitle solucion energetica  
+    .header-container__menu
+      +menu
   section.slider
     .slider__automatico
       .slider__container
@@ -24,9 +30,7 @@ block content
     .history-container__info.d-flex-direction.container
       h1.history-container__title Bienvenidos a ENICER S.A
       p.history-container__subtitle (empresa nicaragüense de energía renovable) 
-      .history-container__linea.border-linea
-      p.history-container__paragraph 
-        | ENICER es una empresa líder especializada en la planificación, diseño de sistemas, suministro, instalación, mantenimiento preventivo y servicios de reparación de equipos de energías renovables, brindándole a sus clientes apoyo técnico total.
+      .history-container__linea.border-linear
     .history-container__card-container.container
       .history-container__card
         +cardHistory('historia','ENICER es una empresa que ha instalado miles de sistemas de energía renovable en comunidades rurales a través de Nicaragua desde sus comienzos en 1982.','stats-bars2')
@@ -36,6 +40,31 @@ block content
         +cardHistory('pregunta frecuente','Conoce las respuestas a las preguntas mas frecuentes acerca de los distintos tipos de energias renovables, estudios de eficiencia energetica, vida util de los productos, ahorro de energia, mantenimiento de equipos solares. Aclara tus dudas y conoce un poco mas de este tema.','clipboard')
       .history-container__card
         +cardHistory('eficiencia energetica.','Apoyar el ahorro energético desde los comercios y las empresas ahora también es posible sin necesidad de cambiar los artefactos. Esas lámparas que se creían irremplazables se pueden reemplazar por leds, una tecnología bajo consumo muy superior a los tubos fluorescentes y sus variantes a rosca.','meter')
+  footer.footer-container.d-flex-direction
+    .footer-container__infoContainer.d-grid.container
+      .footer-container__aboutUs
+        .footer-container__info
+          h1.footer-container__title sobre nosotros
+          p.footer-container__description
+            | ENICER es una empresa líder especializada en la planificación, diseño de sistemas, suministro, instalación, mantenimiento preventivo y servicios de reparación de equipos de energías renovables, brindándole a sus clientes apoyo técnico total.
+        .footer-container__redes.d-flex
+          a(href="#").footer-container__icons.icon-facebook
+          a(href="#").footer-container__icons.icon-whatsapp
+          a(href="#").footer-container__icons.icon-youtube
+      .footer-container__servicio
+        .footer-container__info
+          h1.footer-container__title servicios
+          p.footer-container__description Venta de sistemas footovoltaicos, mantenimientos y soporte tecnico
+      .footer-container__information
+        h1.footer-container__title informacion
+        ul.footer-container__menu
+          li.footer-container__items: a(href="../public/contactUs.html").footer-container__link contactenos
+          li.footer-container__items: a(href="#").footer-container__link preguntas frecuentes 
+    .footer-container__footer
+      p.footer-container__footerTitle | &copy; 2019 | ENICER S.A, #[span.footer-container__footerSpan la mejor solucion a tus problemas energeticos ]
+        
+
+
 block script
   script(src="http://code.jquery.com/jquery-latest.js")
   script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
