@@ -1,9 +1,10 @@
 extends pages/include/template
 append config
-  -pageTitle= 'contacto'
+  -pageTitle= 'Contactenos'
 prepend styles
   link(rel="stylesheet", href="css/fonts.css")
 block content
+  +scrollTop
   header.header-container.d-flex.container
     .header-container__logoContainer.d-flex
       figure.header-container__imgContainer
@@ -34,8 +35,13 @@ block content
         .contact-container__redes
           h2.contact-container__subtitle #[span.contact-container__icons.icon-location2] ubicacion
           p.contact-container__description Entrada principal de villa austria 1/2c al norte
-          h2.contact-container__subtitle #[span.contact-container__icons.icon-phone] telefono
-          p.contact-container__description +505 2222 -222
+          .contact-container__telefonosContainer.d-flex
+            .contact-container__convencional
+              h2.contact-container__subtitle #[span.contact-container__icons.icon-phone] telefono
+              p.contact-container__description +505 2222 - 2222
+            .contact-container__celular
+              h2.contact-container__subtitle #[span.contact-container__icons.icon-whatsapp] whatsapp
+              p.contact-container__description +505 8888 - 8888
           h2.contact-container__subtitle #[span.contact-container__icons.icon-envelop] correo
           p.contact-container__description enicer-nic@gmail.com
   footer.footer-container.d-flex-direction
@@ -46,9 +52,9 @@ block content
           p.footer-container__description
             | ENICER es una empresa líder especializada en la planificación, diseño de sistemas, suministro, instalación, mantenimiento preventivo y servicios de reparación de equipos de energías renovables, brindándole a sus clientes apoyo técnico total.
         .footer-container__redes.d-flex
-          span.footer-container__icons.icon-facebook
-          span.footer-container__icons.icon-whatsapp
-          span.footer-container__icons.icon-youtube
+          a(href="#").footer-container__icons.icon-facebook
+          a(href="#").footer-container__icons.icon-whatsapp
+          a(href="#").footer-container__icons.icon-youtube
       .footer-container__servicio
         .footer-container__info
           h1.footer-container__title servicios
@@ -64,3 +70,4 @@ block content
 block script
   script(src="http://code.jquery.com/jquery-latest.js")
   script(src="js/main.js")
+  script(src="js/scrollTop.js")

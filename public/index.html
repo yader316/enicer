@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
   </head>
   <body class="body-container">
+    <div class="scroll-top" onclick="topFunction()" id="myBtn"><span class="scroll-top__icon icon-arrow-up"></span></div>
     <header class="header-container d-flex container">
       <div class="header-container__logoContainer d-flex">
         <figure class="header-container__imgContainer"><img class="header-container__img" src="img/logo-enicer-2.png" alt=""></figure>
@@ -23,20 +24,22 @@
       </div>
       <div class="header-container__menu">
         <div class="menu d-flex-direction">
-          <div class="menu__bar"><a class="menu__bt" href="#"><span class="menu__icons icon-list2"></span> enicer</a></div>
+          <div class="menu__bar"><a class="menu__bt" href="#"><span class="menu__icons icon-list2"></span> Menu</a></div>
           <nav class="menu__navigation">
             <ul class="menu__menu-container">
               <li class="menu__items"><a class="menu__link" href="../public/index.html"><span class="menu__icons icon-home"></span> inicio</a></li>
-              <li class="menu__items subMenu"> <a class="menu__link" href="#"><span class="menu__icons icon-rocket"></span> proyectos <span class="menu__icons menu__caret icon-arrow-down6"></span></a>
+              <li class="menu__items subMenu"> <a class="menu__link" href="#"><span class="menu__icons icon-rocket"></span> soluciones <span class="menu__icons menu__caret icon-arrow-down6"></span></a>
                 <ul class="menu__children">
-                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> SFV</a></li>
+                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> sistema de respaldo</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> conectado a la red</a></li>
+                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> sistema solar </a></li>
+                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> calentador de agua solar</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> bomba de agua</a></li>
                 </ul>
               </li>
               <li class="menu__items subMenu"> <a class="menu__link" href="#"><span class="menu__icons icon-cart"></span> productos <span class="menu__icons menu__caret icon-arrow-down6"></span></a>
                 <ul class="menu__children">
-                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> paneles solares</a></li>
+                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="../public/paneles.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> paneles solares</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> baterias</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> inversor</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="#"><span class="menu__icons menu__iconsChildren icon-dot"></span> bomba de agua</a></li>
@@ -97,7 +100,7 @@
             <h1 class="footer-container__title">sobre nosotros</h1>
             <p class="footer-container__description">ENICER es una empresa líder especializada en la planificación, diseño de sistemas, suministro, instalación, mantenimiento preventivo y servicios de reparación de equipos de energías renovables, brindándole a sus clientes apoyo técnico total.</p>
           </div>
-          <div class="footer-container__redes d-flex"><a class="footer-container__icons icon-facebook" href="#"></a><a class="footer-container__icons icon-whatsapp" href="#"></a><a class="footer-container__icons icon-youtube" href="#"></a></div>
+          <div class="footer-container__redes d-flex"><a class="footer-container__icons icon-facebook" href="#"></a><a class="footer-container__icons icon-twitter" href="#"></a><a class="footer-container__icons icon-youtube" href="#"></a></div>
         </div>
         <div class="footer-container__servicio">
           <div class="footer-container__info">
@@ -123,6 +126,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/scrollTop.js"></script>
   <script src="js/sliderAutomatico.js"></script>
   <script src="js/sliderCard.js"></script>
   <script src="js/sliderCardResponsive.js"></script>

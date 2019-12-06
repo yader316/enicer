@@ -1,0 +1,97 @@
+.specificationPanel{
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  &__title{
+    margin-top: 4rem;
+    text-transform: capitalize;
+  }
+  &__linea{
+    width: 40%;
+  }
+  &__paragraph{
+    padding: 2rem 1rem;
+    margin: 0 3rem 3rem 0;
+  }
+  &__subtitle{
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+  }
+  &__icons{
+    font-size: 40px;
+    margin-right: .5rem;
+    color: map-get($color-pages, color-azul);
+  }
+  &__description-panel,
+  &__structure{
+    width: 50%;
+  }
+  &__structure{
+    margin-left: 2rem;
+  }
+  &__titleImg{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+  &__container-info{
+    align-items: center;
+  }
+  &__titleImg,
+  &__subtitle{
+    background-color: map-get($color-pages,color-grey);
+    padding: .5rem 2rem;
+    border-radius: 10px;
+  }
+  &__img-container{
+    width: 100px;
+  }
+  &__img-container-celda{
+    width: 100%;
+  }
+  &__img{
+    width: 100%;
+  }
+}
+.panelType{
+  font-family: Arial, Helvetica, sans-serif;
+  &__img-container{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img{
+    width: 100%;
+    // height: 600px;
+  }
+  &__priceType{
+    width: 50%;
+  background-color: map-get($color-pages,color-grey-opacity);
+  }
+  &__priceType{
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    text-transform: uppercase;
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+  &__linea{
+    width: 40%;
+    margin-bottom: 3rem;
+  }
+  &__subtitle{
+    text-transform: capitalize;
+    font-weight: lighter;
+    color: map-get($color-pages,color-azul );
+    background-color: white;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .7);
+  }
+}
