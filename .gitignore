@@ -1,0 +1,6 @@
+dev/
+node_modules/
+gulpFile.js
+package-lock.json
+package.json
+public
