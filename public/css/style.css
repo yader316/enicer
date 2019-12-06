@@ -315,40 +315,40 @@
   background-repeat: no-repeat;
 }
 
-/* line 82, dev/scss/componentes/_contactUs.scss */
+/* line 81, dev/scss/componentes/_contactUs.scss */
 .contact-container__redes-container, .contact-container__mapContainer {
   width: 50%;
 }
 
-/* line 86, dev/scss/componentes/_contactUs.scss */
+/* line 85, dev/scss/componentes/_contactUs.scss */
 .contact-container__map {
   width: 100%;
   height: 100%;
 }
 
-/* line 91, dev/scss/componentes/_contactUs.scss */
+/* line 89, dev/scss/componentes/_contactUs.scss */
 .contact-container__redes-container, .contact-container__mapContainer {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 95, dev/scss/componentes/_contactUs.scss */
+/* line 93, dev/scss/componentes/_contactUs.scss */
 .contact-container__redes-container {
   padding-bottom: 2rem;
 }
 
-/* line 98, dev/scss/componentes/_contactUs.scss */
+/* line 96, dev/scss/componentes/_contactUs.scss */
 .contact-container__title, .contact-container__subtitle {
   text-transform: capitalize;
 }
 
-/* line 102, dev/scss/componentes/_contactUs.scss */
+/* line 100, dev/scss/componentes/_contactUs.scss */
 .contact-container__title {
   text-align: center;
   font-size: 2rem;
   padding-top: 2rem;
 }
 
-/* line 107, dev/scss/componentes/_contactUs.scss */
+/* line 105, dev/scss/componentes/_contactUs.scss */
 .contact-container__linea {
   width: 40%;
   margin-left: auto;
@@ -356,25 +356,25 @@
   margin-bottom: 3rem;
 }
 
-/* line 113, dev/scss/componentes/_contactUs.scss */
+/* line 111, dev/scss/componentes/_contactUs.scss */
 .contact-container__subtitle {
   align-self: flex-start;
   margin: 0 4rem;
 }
 
-/* line 117, dev/scss/componentes/_contactUs.scss */
+/* line 115, dev/scss/componentes/_contactUs.scss */
 .contact-container__description {
   margin-left: 6rem;
   padding: 1rem;
   font-size: 1.2rem;
 }
 
-/* line 122, dev/scss/componentes/_contactUs.scss */
+/* line 120, dev/scss/componentes/_contactUs.scss */
 .contact-container__title, .contact-container__subtitle, .contact-container__description {
   color: white;
 }
 
-/* line 127, dev/scss/componentes/_contactUs.scss */
+/* line 125, dev/scss/componentes/_contactUs.scss */
 .contact-container__icons {
   color: #6dc82b;
   margin-right: .5rem;
@@ -773,7 +773,7 @@
 .footer-container__title {
   text-transform: capitalize;
   text-align: center;
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1033,91 +1033,95 @@
   .contact-container__map {
     height: 400px;
   }
-  /* line 321, dev/scss/style.scss */
+  /* line 319, dev/scss/style.scss */
+  .contact-container__nameEmpresa, .contact-container__telefono {
+    margin-right: 2rem;
+  }
+  /* line 325, dev/scss/style.scss */
   .product-container__info {
     width: 100%;
   }
-  /* line 326, dev/scss/style.scss */
+  /* line 330, dev/scss/style.scss */
   .catalogo__description {
     width: 100%;
   }
-  /* line 329, dev/scss/style.scss */
+  /* line 333, dev/scss/style.scss */
   .catalogo__imgContainer {
     margin: 2rem;
   }
-  /* line 332, dev/scss/style.scss */
+  /* line 336, dev/scss/style.scss */
   .catalogo__title {
     padding: 1rem 1rem 1rem 2rem;
     font-size: 2rem;
   }
-  /* line 336, dev/scss/style.scss */
+  /* line 340, dev/scss/style.scss */
   .catalogo__price {
     padding-left: 4rem;
   }
-  /* line 339, dev/scss/style.scss */
+  /* line 343, dev/scss/style.scss */
   .catalogo__linea {
     margin-left: 4rem;
   }
-  /* line 342, dev/scss/style.scss */
+  /* line 346, dev/scss/style.scss */
   .catalogo__description {
     padding: 1rem 3rem 2rem;
   }
-  /* line 346, dev/scss/style.scss */
+  /* line 350, dev/scss/style.scss */
   .catalogo__btn {
     margin-left: 2rem;
   }
-  /* line 350, dev/scss/style.scss */
+  /* line 354, dev/scss/style.scss */
   .specificationPanel {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 353, dev/scss/style.scss */
+  /* line 357, dev/scss/style.scss */
   .specificationPanel__description-panel, .specificationPanel__structure {
     width: 100%;
     margin: 0;
     padding: 0  1rem;
   }
-  /* line 359, dev/scss/style.scss */
+  /* line 363, dev/scss/style.scss */
   .specificationPanel__title {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
   }
-  /* line 364, dev/scss/style.scss */
+  /* line 368, dev/scss/style.scss */
   .specificationPanel__paragraph {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
   }
-  /* line 369, dev/scss/style.scss */
+  /* line 373, dev/scss/style.scss */
   .specificationPanel__linea {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 373, dev/scss/style.scss */
+  /* line 377, dev/scss/style.scss */
   .specificationPanel__img-container-celda {
     width: 50%;
   }
-  /* line 377, dev/scss/style.scss */
+  /* line 381, dev/scss/style.scss */
   .panel {
     width: 100%;
     padding: 1rem 0;
   }
-  /* line 380, dev/scss/style.scss */
+  /* line 384, dev/scss/style.scss */
   .panel__title {
     text-align: center;
     margin-top: 2rem;
     padding: 0 2rem;
   }
-  /* line 385, dev/scss/style.scss */
+  /* line 389, dev/scss/style.scss */
   .panel__linea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 390, dev/scss/style.scss */
+  /* line 394, dev/scss/style.scss */
   .panel__price {
     margin: 2rem 0;
     text-align: center;
@@ -1125,21 +1129,21 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* line 397, dev/scss/style.scss */
+  /* line 401, dev/scss/style.scss */
   .header-container {
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 401, dev/scss/style.scss */
+  /* line 405, dev/scss/style.scss */
   .header-container__logoContainer {
     display: none;
   }
-  /* line 404, dev/scss/style.scss */
+  /* line 408, dev/scss/style.scss */
   .header-container__menu {
     width: 100%;
   }
-  /* line 408, dev/scss/style.scss */
+  /* line 412, dev/scss/style.scss */
   .history-container {
     width: 100%;
     margin-top: 2rem;
@@ -1147,28 +1151,28 @@
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 412, dev/scss/style.scss */
+  /* line 416, dev/scss/style.scss */
   .history-container__info, .history-container__imgContainer {
     width: 100%;
   }
-  /* line 416, dev/scss/style.scss */
+  /* line 420, dev/scss/style.scss */
   .history-container__img {
     width: 60%;
   }
-  /* line 419, dev/scss/style.scss */
+  /* line 423, dev/scss/style.scss */
   .history-container__paragraph {
     width: 100%;
   }
-  /* line 422, dev/scss/style.scss */
+  /* line 426, dev/scss/style.scss */
   .history-container__linea {
     width: 50%;
     margin-left: 2.2rem;
   }
-  /* line 427, dev/scss/style.scss */
+  /* line 431, dev/scss/style.scss */
   .menu {
     margin-top: 50px;
   }
-  /* line 429, dev/scss/style.scss */
+  /* line 433, dev/scss/style.scss */
   .menu__bar {
     display: block;
     width: 100%;
@@ -1177,7 +1181,7 @@
     top: 0;
     background-color: #1c79be;
   }
-  /* line 437, dev/scss/style.scss */
+  /* line 441, dev/scss/style.scss */
   .menu__bar .menu__bt {
     display: block;
     padding: 20px 36px;
@@ -1187,12 +1191,12 @@
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 446, dev/scss/style.scss */
+  /* line 450, dev/scss/style.scss */
   .menu__bar .menu__icons {
     float: right;
     font-size: 40px;
   }
-  /* line 450, dev/scss/style.scss */
+  /* line 454, dev/scss/style.scss */
   .menu__navigation {
     width: 80%;
     height: calc(100% - 80px);
@@ -1208,39 +1212,39 @@
     background-color: #1c79be;
     overflow: scroll;
   }
-  /* line 467, dev/scss/style.scss */
+  /* line 471, dev/scss/style.scss */
   .menu__items {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  /* line 470, dev/scss/style.scss */
+  /* line 474, dev/scss/style.scss */
   .menu__items:hover .menu__children {
     display: none;
   }
-  /* line 474, dev/scss/style.scss */
+  /* line 478, dev/scss/style.scss */
   .menu__icons {
     color: white;
   }
-  /* line 477, dev/scss/style.scss */
+  /* line 481, dev/scss/style.scss */
   .menu__link {
     color: black;
     font-weight: bold;
     display: block;
   }
-  /* line 482, dev/scss/style.scss */
+  /* line 486, dev/scss/style.scss */
   .menu__children {
     width: 100%;
     position: relative;
   }
-  /* line 486, dev/scss/style.scss */
+  /* line 490, dev/scss/style.scss */
   .menu__linkChildren {
     margin-left: 20px;
   }
-  /* line 489, dev/scss/style.scss */
+  /* line 493, dev/scss/style.scss */
   .menu__caret {
     float: right;
   }
-  /* line 493, dev/scss/style.scss */
+  /* line 497, dev/scss/style.scss */
   .footer-container {
     width: 100%;
     padding: 0;
@@ -1248,24 +1252,24 @@
     background-repeat: repeat;
     background-size: cover;
   }
-  /* line 501, dev/scss/style.scss */
+  /* line 505, dev/scss/style.scss */
   .footer-container__infoContainer {
     padding-top: 3rem;
     display: block;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  /* line 507, dev/scss/style.scss */
+  /* line 511, dev/scss/style.scss */
   .footer-container__title {
     margin-bottom: 2rem;
   }
-  /* line 510, dev/scss/style.scss */
+  /* line 514, dev/scss/style.scss */
   .footer-container__description {
     margin-left: 2rem;
     padding: 0;
     text-align: center;
   }
-  /* line 515, dev/scss/style.scss */
+  /* line 519, dev/scss/style.scss */
   .footer-container__menu {
     display: -webkit-box;
     display: flex;
@@ -1277,16 +1281,16 @@
     padding: 0;
     margin-bottom: 2rem;
   }
-  /* line 522, dev/scss/style.scss */
+  /* line 526, dev/scss/style.scss */
   .footer-container__items {
     margin: 1rem 0;
   }
-  /* line 525, dev/scss/style.scss */
+  /* line 529, dev/scss/style.scss */
   .footer-container__footer {
     background-color: #f3f1f1ee;
     width: 100%;
   }
-  /* line 529, dev/scss/style.scss */
+  /* line 533, dev/scss/style.scss */
   .footer-container__footerTitle {
     color: #1c79be;
     display: -webkit-box;
@@ -1298,146 +1302,146 @@
             align-items: center;
     padding: 1rem;
   }
-  /* line 537, dev/scss/style.scss */
+  /* line 541, dev/scss/style.scss */
   .contact-container {
     width: 100%;
   }
-  /* line 539, dev/scss/style.scss */
+  /* line 543, dev/scss/style.scss */
   .contact-container__backgroundContactenos {
     height: 100px;
     margin: 2rem 0;
   }
-  /* line 543, dev/scss/style.scss */
+  /* line 547, dev/scss/style.scss */
   .contact-container__form {
     width: 100%;
   }
-  /* line 546, dev/scss/style.scss */
+  /* line 550, dev/scss/style.scss */
   .contact-container__formInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
     margin: 0 1rem;
   }
-  /* line 550, dev/scss/style.scss */
+  /* line 554, dev/scss/style.scss */
   .contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
   }
-  /* line 559, dev/scss/style.scss */
+  /* line 563, dev/scss/style.scss */
   .contact-container__mensaje {
     height: 200px;
     background-size: 50%;
   }
-  /* line 565, dev/scss/style.scss */
+  /* line 569, dev/scss/style.scss */
   .contact-container__contactenos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 568, dev/scss/style.scss */
+  /* line 572, dev/scss/style.scss */
   .contact-container__redes-container, .contact-container__mapContainer {
     width: 100%;
   }
-  /* line 572, dev/scss/style.scss */
+  /* line 576, dev/scss/style.scss */
   .contact-container__subtitle {
     margin: 0 2rem;
   }
-  /* line 575, dev/scss/style.scss */
+  /* line 579, dev/scss/style.scss */
   .contact-container__description {
     margin-left: 3rem;
   }
-  /* line 578, dev/scss/style.scss */
+  /* line 582, dev/scss/style.scss */
   .contact-container__telefonosContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 581, dev/scss/style.scss */
+  /* line 585, dev/scss/style.scss */
   .contact-container__map {
     height: 300px;
   }
-  /* line 585, dev/scss/style.scss */
+  /* line 589, dev/scss/style.scss */
   .product-container {
     padding: 0;
     margin: 0;
   }
-  /* line 588, dev/scss/style.scss */
+  /* line 592, dev/scss/style.scss */
   .product-container__info {
     width: 100%;
   }
-  /* line 592, dev/scss/style.scss */
+  /* line 596, dev/scss/style.scss */
   .catalogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 594, dev/scss/style.scss */
+  /* line 598, dev/scss/style.scss */
   .catalogo__infoContainer, .catalogo__imgContainer, .catalogo__description {
     width: 100%;
   }
-  /* line 599, dev/scss/style.scss */
+  /* line 603, dev/scss/style.scss */
   .catalogo__imgContainer {
     margin: 0 0 3rem 0;
   }
-  /* line 602, dev/scss/style.scss */
+  /* line 606, dev/scss/style.scss */
   .catalogo__img {
     width: 100%;
     height: 400px;
   }
-  /* line 606, dev/scss/style.scss */
+  /* line 610, dev/scss/style.scss */
   .catalogo__title {
     padding: 1rem 1rem 1rem 2rem;
     font-size: 2rem;
   }
-  /* line 610, dev/scss/style.scss */
+  /* line 614, dev/scss/style.scss */
   .catalogo__price {
     padding-left: 4rem;
   }
-  /* line 613, dev/scss/style.scss */
+  /* line 617, dev/scss/style.scss */
   .catalogo__linea {
     margin-left: 4rem;
   }
-  /* line 616, dev/scss/style.scss */
+  /* line 620, dev/scss/style.scss */
   .catalogo__description {
     padding: 1rem 3rem 2rem;
   }
-  /* line 620, dev/scss/style.scss */
+  /* line 624, dev/scss/style.scss */
   .catalogo__btn {
     margin-left: 2rem;
   }
-  /* line 624, dev/scss/style.scss */
+  /* line 628, dev/scss/style.scss */
   .specificationPanel {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 627, dev/scss/style.scss */
+  /* line 631, dev/scss/style.scss */
   .specificationPanel__description-panel, .specificationPanel__structure {
     width: 100%;
     margin: 0;
     padding: 0  1rem;
   }
-  /* line 633, dev/scss/style.scss */
+  /* line 637, dev/scss/style.scss */
   .specificationPanel__title {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
   }
-  /* line 638, dev/scss/style.scss */
+  /* line 642, dev/scss/style.scss */
   .specificationPanel__paragraph {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
   }
-  /* line 643, dev/scss/style.scss */
+  /* line 647, dev/scss/style.scss */
   .specificationPanel__linea {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 648, dev/scss/style.scss */
+  /* line 652, dev/scss/style.scss */
   .panel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1445,23 +1449,23 @@
     width: 100%;
     padding: 1rem 0 0;
   }
-  /* line 652, dev/scss/style.scss */
+  /* line 656, dev/scss/style.scss */
   .panel__information, .panel__img-container, .panel__img {
     width: 100%;
   }
-  /* line 657, dev/scss/style.scss */
+  /* line 661, dev/scss/style.scss */
   .panel__title {
     text-align: center;
     margin-top: 2rem;
     padding: 0 2rem;
   }
-  /* line 662, dev/scss/style.scss */
+  /* line 666, dev/scss/style.scss */
   .panel__linea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 667, dev/scss/style.scss */
+  /* line 671, dev/scss/style.scss */
   .panel__subtitle {
     padding: 0 2rem;
     display: -webkit-box;
@@ -1473,11 +1477,11 @@
             align-items: center;
     font-size: 1.5rem;
   }
-  /* line 674, dev/scss/style.scss */
+  /* line 678, dev/scss/style.scss */
   .panel__respuesta {
     margin-top: 1rem;
   }
-  /* line 677, dev/scss/style.scss */
+  /* line 681, dev/scss/style.scss */
   .panel__price {
     margin: 2rem 0 0;
     text-align: center;

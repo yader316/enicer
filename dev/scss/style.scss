@@ -103,7 +103,7 @@
   &__title{
     text-transform: capitalize;
     text-align: center;
-    color: black;
+    color: white;
     // background: linear-gradient(red,yellow);
     // -webkit-background-clip: text;
     // color: transparent;
@@ -315,6 +315,10 @@
     }
     &__map{
       height: 400px;
+    }
+    &__nameEmpresa,
+    &__telefono{
+      margin-right: 2rem;
     }
   }
   .product-container{
