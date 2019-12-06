@@ -235,7 +235,8 @@
         repeat: no-repeat;
         position: right center;
       };
-      background-color:map-get($color-pages, color-azul);      overflow: scroll;
+      background-color:map-get($color-pages, color-azul);
+      overflow: scroll;
     }
     &__items{
       display: block;
@@ -248,7 +249,7 @@
       color: white;
     }
     &__link{
-      color: black;
+      color: white;
       font-weight: bold;
       display: block;
     }
@@ -479,7 +480,7 @@
       color: white;
     }
     &__link{
-      color: black;
+      color: white;
       font-weight: bold;
       display: block;
     }
