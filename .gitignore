@@ -2,4 +2,3 @@ dev/
 node_modules/
 *.js
 *.json
-public/
