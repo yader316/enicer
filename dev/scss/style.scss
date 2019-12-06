@@ -457,7 +457,7 @@
       height: calc(100% - 80px);
       position: fixed;
       z-index: 999;
-      right:100%;
+      left:-100%;
       margin: 0;
       top: 80px;
       background-image: img-url('logo-enicer-vertical.png');
@@ -468,6 +468,9 @@
       };
       background-color:map-get($color-pages, color-azul);
       overflow: scroll;
+      &.active{
+        left: 0;
+      }
     }
     &__items{
       display: block;
