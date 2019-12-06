@@ -1,0 +1,1495 @@
+/* line 1, dev/scss/style.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 1, dev/scss/basic/_class-basic.scss */
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 6, dev/scss/basic/_class-basic.scss */
+.d-flex {
+  display: -webkit-box;
+  display: flex;
+}
+
+/* line 9, dev/scss/basic/_class-basic.scss */
+.d-flex-direction {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+/* line 13, dev/scss/basic/_class-basic.scss */
+.d-grid {
+  display: grid;
+}
+
+/* line 16, dev/scss/basic/_class-basic.scss */
+.body-container {
+  overflow-x: hidden;
+}
+
+/* line 19, dev/scss/basic/_class-basic.scss */
+.border-linea {
+  border-bottom: 2px solid #1c79be;
+  margin: .5rem;
+}
+
+/* line 23, dev/scss/basic/_class-basic.scss */
+.buttonStyle {
+  padding: .5rem 2rem;
+  background-color: #1c79be;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+/* line 29, dev/scss/basic/_class-basic.scss */
+.buttonStyle:hover {
+  background-color: #6dc82b;
+}
+
+/* line 1, dev/scss/componentes/_menu.scss */
+.menu {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 3, dev/scss/componentes/_menu.scss */
+.menu__bar {
+  display: none;
+}
+
+/* line 6, dev/scss/componentes/_menu.scss */
+.menu__bt {
+  text-transform: uppercase;
+}
+
+/* line 9, dev/scss/componentes/_menu.scss */
+.menu__navigation {
+  background-color: #1c79be;
+  z-index: 1000;
+  margin: 20px auto;
+}
+
+/* line 14, dev/scss/componentes/_menu.scss */
+.menu__menu-container {
+  list-style: none;
+}
+
+/* line 17, dev/scss/componentes/_menu.scss */
+.menu__items {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 21, dev/scss/componentes/_menu.scss */
+.menu__items:hover {
+  background-color: #6dc82b;
+}
+
+/* line 24, dev/scss/componentes/_menu.scss */
+.menu__items:hover .menu__children {
+  display: block;
+}
+
+/* line 28, dev/scss/componentes/_menu.scss */
+.menu__link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+/* line 36, dev/scss/componentes/_menu.scss */
+.menu__icons {
+  margin-right: 10px;
+}
+
+/* line 39, dev/scss/componentes/_menu.scss */
+.menu__children {
+  display: none;
+  background-color: #215b75;
+  position: absolute;
+  width: 150%;
+  z-index: 1000;
+}
+
+/* line 46, dev/scss/componentes/_menu.scss */
+.menu__itemsChildren {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* line 51, dev/scss/componentes/_menu.scss */
+.menu__linkChildren {
+  display: block;
+}
+
+/* line 54, dev/scss/componentes/_menu.scss */
+.menu__iconsChildren {
+  float: right;
+  position: relative;
+  top: 3px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+/* line 61, dev/scss/componentes/_menu.scss */
+.menu__caret {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+/* line 1, dev/scss/componentes/_scroll-top.scss */
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999999;
+  cursor: pointer;
+}
+
+/* line 8, dev/scss/componentes/_scroll-top.scss */
+.scroll-top__icon {
+  font-size: 50px;
+  color: #6dc82b;
+}
+
+/* line 11, dev/scss/componentes/_scroll-top.scss */
+.scroll-top__icon:hover {
+  color: #fda800;
+}
+
+/* line 2, dev/scss/componentes/_card-history.scss */
+.cardHistory {
+  margin: 0 1rem;
+}
+
+/* line 4, dev/scss/componentes/_card-history.scss */
+.cardHistory__title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  padding: 1rem;
+}
+
+/* line 9, dev/scss/componentes/_card-history.scss */
+.cardHistory__icons {
+  margin-right: 1rem;
+  color: #1c79be;
+}
+
+/* line 13, dev/scss/componentes/_card-history.scss */
+.cardHistory__description {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 0 2rem;
+}
+
+/* line 1, dev/scss/componentes/_contactUs.scss */
+.contact-container {
+  width: 100%;
+}
+
+/* line 3, dev/scss/componentes/_contactUs.scss */
+.contact-container__backgroundContactenos {
+  height: 300px;
+  background-image: url("../img/contactenos.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+/* line 12, dev/scss/componentes/_contactUs.scss */
+.contact-container__form {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* line 16, dev/scss/componentes/_contactUs.scss */
+.contact-container__formInfo {
+  margin: 1rem;
+  justify-content: space-around;
+}
+
+/* line 20, dev/scss/componentes/_contactUs.scss */
+.contact-container__formTxtArea {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+/* line 23, dev/scss/componentes/_contactUs.scss */
+.contact-container__mensaje {
+  resize: none;
+  width: 80%;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  background-image: url("../img/bujia-panel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #1c79be;
+}
+
+/* line 36, dev/scss/componentes/_contactUs.scss */
+.contact-container__mensaje:focus {
+  border: 2px solid #6dc82b;
+  background: transparent;
+}
+
+/* line 41, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email, .contact-container__mensaje {
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+  outline: none;
+  color: #6dc82b;
+  background-color: transparent;
+}
+
+/* line 51, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa::-webkit-input-placeholder, .contact-container__namePersona::-webkit-input-placeholder, .contact-container__telefono::-webkit-input-placeholder, .contact-container__email::-webkit-input-placeholder, .contact-container__mensaje::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::-moz-placeholder, .contact-container__namePersona::-moz-placeholder, .contact-container__telefono::-moz-placeholder, .contact-container__email::-moz-placeholder, .contact-container__mensaje::-moz-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa:-ms-input-placeholder, .contact-container__namePersona:-ms-input-placeholder, .contact-container__telefono:-ms-input-placeholder, .contact-container__email:-ms-input-placeholder, .contact-container__mensaje:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::-ms-input-placeholder, .contact-container__namePersona::-ms-input-placeholder, .contact-container__telefono::-ms-input-placeholder, .contact-container__email::-ms-input-placeholder, .contact-container__mensaje::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+.contact-container__nameEmpresa::placeholder, .contact-container__namePersona::placeholder, .contact-container__telefono::placeholder, .contact-container__email::placeholder, .contact-container__mensaje::placeholder {
+  font-size: 1rem;
+  color: #1c79be;
+}
+
+/* line 56, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email {
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #1c79be;
+}
+
+/* line 64, dev/scss/componentes/_contactUs.scss */
+.contact-container__nameEmpresa:focus, .contact-container__namePersona:focus, .contact-container__telefono:focus, .contact-container__email:focus {
+  border-bottom: 2px solid #6dc82b;
+}
+
+/* line 68, dev/scss/componentes/_contactUs.scss */
+.contact-container__btn {
+  text-transform: uppercase;
+  align-self: center;
+  margin: 2rem 0;
+}
+
+/* line 73, dev/scss/componentes/_contactUs.scss */
+.contact-container__contactenos {
+  background-image: url("../img/nubes.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+/* line 81, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container, .contact-container__mapContainer {
+  width: 50%;
+}
+
+/* line 85, dev/scss/componentes/_contactUs.scss */
+.contact-container__map {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 89, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container, .contact-container__mapContainer {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 93, dev/scss/componentes/_contactUs.scss */
+.contact-container__redes-container {
+  padding-bottom: 2rem;
+}
+
+/* line 96, dev/scss/componentes/_contactUs.scss */
+.contact-container__title, .contact-container__subtitle {
+  text-transform: capitalize;
+}
+
+/* line 100, dev/scss/componentes/_contactUs.scss */
+.contact-container__title {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+/* line 105, dev/scss/componentes/_contactUs.scss */
+.contact-container__linea {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+/* line 111, dev/scss/componentes/_contactUs.scss */
+.contact-container__subtitle {
+  align-self: flex-start;
+  margin: 0 4rem;
+}
+
+/* line 115, dev/scss/componentes/_contactUs.scss */
+.contact-container__description {
+  margin-left: 6rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* line 120, dev/scss/componentes/_contactUs.scss */
+.contact-container__title, .contact-container__subtitle, .contact-container__description {
+  color: white;
+}
+
+/* line 125, dev/scss/componentes/_contactUs.scss */
+.contact-container__icons {
+  color: #6dc82b;
+  margin-right: .5rem;
+}
+
+/* line 1, dev/scss/componentes/_productos.scss */
+.product-container {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f3f1f1ee;
+}
+
+/* line 7, dev/scss/componentes/_productos.scss */
+.catalogo__infoContainer {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+/* line 10, dev/scss/componentes/_productos.scss */
+.catalogo__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+/* line 15, dev/scss/componentes/_productos.scss */
+.catalogo__price {
+  text-transform: capitalize;
+  padding: 1rem 0 0 1rem;
+  color: #6dc82b;
+}
+
+/* line 20, dev/scss/componentes/_productos.scss */
+.catalogo__linea {
+  width: 60%;
+  margin: 1rem 1rem 2rem;
+}
+
+/* line 24, dev/scss/componentes/_productos.scss */
+.catalogo__description {
+  padding: 0 3rem 2rem;
+  line-height: 1.7;
+}
+
+/* line 28, dev/scss/componentes/_productos.scss */
+.catalogo__btn {
+  align-self: flex-start;
+  font-size: 1rem;
+  padding: .5rem 2rem;
+}
+
+/* line 33, dev/scss/componentes/_productos.scss */
+.catalogo__infoContainer {
+  width: 60%;
+}
+
+/* line 36, dev/scss/componentes/_productos.scss */
+.catalogo__imgContainer {
+  width: 40%;
+  background-color: #f3f1f1ee;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 1px black;
+}
+
+/* line 42, dev/scss/componentes/_productos.scss */
+.catalogo__figure-container, .catalogo__img {
+  width: 100%;
+}
+
+/* line 46, dev/scss/componentes/_productos.scss */
+.catalogo__title, .catalogo__price, .catalogo__description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 1, dev/scss/componentes/_paneles.scss */
+.specificationPanel {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 5, dev/scss/componentes/_paneles.scss */
+.specificationPanel__title {
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
+
+/* line 9, dev/scss/componentes/_paneles.scss */
+.specificationPanel__linea {
+  width: 40%;
+}
+
+/* line 12, dev/scss/componentes/_paneles.scss */
+.specificationPanel__paragraph {
+  padding: 2rem 1rem;
+  margin: 0 3rem 3rem 0;
+}
+
+/* line 16, dev/scss/componentes/_paneles.scss */
+.specificationPanel__subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+/* line 21, dev/scss/componentes/_paneles.scss */
+.specificationPanel__icons {
+  font-size: 40px;
+  margin-right: .5rem;
+  color: #1c79be;
+}
+
+/* line 26, dev/scss/componentes/_paneles.scss */
+.specificationPanel__description-panel, .specificationPanel__structure {
+  width: 50%;
+}
+
+/* line 30, dev/scss/componentes/_paneles.scss */
+.specificationPanel__structure {
+  margin-left: 2rem;
+}
+
+/* line 33, dev/scss/componentes/_paneles.scss */
+.specificationPanel__titleImg {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+/* line 39, dev/scss/componentes/_paneles.scss */
+.specificationPanel__container-info {
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 42, dev/scss/componentes/_paneles.scss */
+.specificationPanel__titleImg, .specificationPanel__subtitle {
+  background-color: #e6e6e6;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+}
+
+/* line 48, dev/scss/componentes/_paneles.scss */
+.specificationPanel__img-container {
+  width: 100px;
+}
+
+/* line 51, dev/scss/componentes/_paneles.scss */
+.specificationPanel__img-container-celda {
+  width: 100%;
+}
+
+/* line 54, dev/scss/componentes/_paneles.scss */
+.specificationPanel__img {
+  width: 100%;
+}
+
+/* line 58, dev/scss/componentes/_paneles.scss */
+.panelType {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 60, dev/scss/componentes/_paneles.scss */
+.panelType__img-container {
+  width: 50%;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 65, dev/scss/componentes/_paneles.scss */
+.panelType__img {
+  width: 100%;
+}
+
+/* line 69, dev/scss/componentes/_paneles.scss */
+.panelType__priceType {
+  width: 50%;
+  background-color: #f3f1f1ee;
+}
+
+/* line 73, dev/scss/componentes/_paneles.scss */
+.panelType__priceType {
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 77, dev/scss/componentes/_paneles.scss */
+.panelType__title {
+  text-transform: uppercase;
+  padding-top: 3rem;
+  font-size: 2rem;
+}
+
+/* line 82, dev/scss/componentes/_paneles.scss */
+.panelType__linea {
+  width: 40%;
+  margin-bottom: 3rem;
+}
+
+/* line 86, dev/scss/componentes/_paneles.scss */
+.panelType__subtitle {
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #1c79be;
+  background-color: white;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* line 1, dev/scss/componentes/_panelType.scss */
+.paneles-type {
+  background-color: #e6e6e6;
+}
+
+/* line 4, dev/scss/componentes/_panelType.scss */
+.panel {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4rem 0;
+  border-bottom: 2px solid grey;
+}
+
+/* line 8, dev/scss/componentes/_panelType.scss */
+.panel__img-container, .panel__information {
+  width: 50%;
+}
+
+/* line 12, dev/scss/componentes/_panelType.scss */
+.panel__title {
+  text-transform: uppercase;
+}
+
+/* line 15, dev/scss/componentes/_panelType.scss */
+.panel__linea {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* line 19, dev/scss/componentes/_panelType.scss */
+.panel__subtitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* line 24, dev/scss/componentes/_panelType.scss */
+.panel__respuesta {
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+
+/* line 28, dev/scss/componentes/_panelType.scss */
+.panel__price {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #1c79be;
+}
+
+/* line 33, dev/scss/componentes/_panelType.scss */
+.panel__titlePrice {
+  color: black;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+/* line 21, dev/scss/style.scss */
+.header-container {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 25, dev/scss/style.scss */
+.header-container__menu {
+  width: 70%;
+}
+
+/* line 28, dev/scss/style.scss */
+.header-container__logoContainer {
+  width: 30%;
+}
+
+/* line 31, dev/scss/style.scss */
+.header-container__titleContainer {
+  width: 60%;
+  align-self: flex-end;
+  margin: 1rem;
+}
+
+/* line 36, dev/scss/style.scss */
+.header-container__imgContainer {
+  width: 40%;
+}
+
+/* line 39, dev/scss/style.scss */
+.header-container__img {
+  width: 100%;
+}
+
+/* line 42, dev/scss/style.scss */
+.header-container__title {
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(green), to(yellow));
+  background: linear-gradient(green, yellow);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* line 50, dev/scss/style.scss */
+.header-container__subtitle {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, left bottom, from(blue), to(green));
+  background: linear-gradient(blue, green);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* line 60, dev/scss/style.scss */
+.slider {
+  width: 100%;
+}
+
+/* line 62, dev/scss/style.scss */
+.slider__img {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 67, dev/scss/style.scss */
+.history-container {
+  padding: 4rem 0;
+  background-color: #f3f1f1ee;
+}
+
+/* line 70, dev/scss/style.scss */
+.history-container__info {
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+/* line 74, dev/scss/style.scss */
+.history-container__title {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 78, dev/scss/style.scss */
+.history-container__subtitle {
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 82, dev/scss/style.scss */
+.history-container__linea {
+  width: 20%;
+  margin-left: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+/* line 88, dev/scss/style.scss */
+.footer-container {
+  width: 100%;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding-top: 4rem;
+  background-color: #1c79be;
+  background-image: url("../img/bujia-panel.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* line 99, dev/scss/style.scss */
+.footer-container__infoContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* line 103, dev/scss/style.scss */
+.footer-container__title {
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 112, dev/scss/style.scss */
+.footer-container__menu, .footer-container__description {
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+/* line 117, dev/scss/style.scss */
+.footer-container__description {
+  padding-bottom: 2rem;
+  line-height: 1.5;
+  color: #e6e6e6;
+}
+
+/* line 122, dev/scss/style.scss */
+.footer-container__redes {
+  justify-content: space-around;
+}
+
+/* line 125, dev/scss/style.scss */
+.footer-container__icons {
+  font-size: 40px;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/* line 133, dev/scss/style.scss */
+.footer-container__items {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+/* line 137, dev/scss/style.scss */
+.footer-container__description, .footer-container__link {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 142, dev/scss/style.scss */
+.footer-container__link {
+  color: #1c79be;
+  background-color: #e6e6e6;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* line 149, dev/scss/style.scss */
+.footer-container__link:hover {
+  color: #6dc82b;
+  background-color: #215b75;
+}
+
+/* line 154, dev/scss/style.scss */
+.footer-container__footerTitle {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* line 158, dev/scss/style.scss */
+.footer-container__footerSpan {
+  font-weight: lighter;
+}
+
+/* line 164, dev/scss/style.scss */
+.icon-twitter:hover,
+.icon-facebook:hover {
+  color: #215b75;
+}
+
+/* line 169, dev/scss/style.scss */
+.icon-youtube:hover {
+  color: red;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 175, dev/scss/style.scss */
+  .header-container {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  /* line 179, dev/scss/style.scss */
+  .header-container__logoContainer {
+    display: none;
+    width: 0;
+  }
+  /* line 183, dev/scss/style.scss */
+  .header-container__menu {
+    width: 100%;
+  }
+  /* line 187, dev/scss/style.scss */
+  .history-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  /* line 190, dev/scss/style.scss */
+  .history-container__title {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+  /* line 194, dev/scss/style.scss */
+  .history-container__paragraph {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  /* line 198, dev/scss/style.scss */
+  .history-container__imgContainer {
+    width: 100%;
+  }
+  /* line 202, dev/scss/style.scss */
+  .menu {
+    margin-top: 50px;
+  }
+  /* line 204, dev/scss/style.scss */
+  .menu__bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    background-color: #1c79be;
+  }
+  /* line 212, dev/scss/style.scss */
+  .menu__bar .menu__bt {
+    display: block;
+    padding: 20px 36px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* line 221, dev/scss/style.scss */
+  .menu__bar .menu__icons {
+    float: right;
+    font-size: 40px;
+  }
+  /* line 225, dev/scss/style.scss */
+  .menu__navigation {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    right: 100%;
+    margin: 0;
+    top: 80px;
+    background-image: url("../img/logo-enicer-vertical.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #1c79be;
+    overflow: scroll;
+  }
+  /* line 241, dev/scss/style.scss */
+  .menu__items {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* line 244, dev/scss/style.scss */
+  .menu__items:hover .menu__children {
+    display: none;
+  }
+  /* line 248, dev/scss/style.scss */
+  .menu__icons {
+    color: white;
+  }
+  /* line 251, dev/scss/style.scss */
+  .menu__link {
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+  /* line 256, dev/scss/style.scss */
+  .menu__children {
+    width: 100%;
+    position: relative;
+  }
+  /* line 260, dev/scss/style.scss */
+  .menu__linkChildren {
+    margin-left: 20px;
+  }
+  /* line 263, dev/scss/style.scss */
+  .menu__caret {
+    float: right;
+  }
+  /* line 267, dev/scss/style.scss */
+  .footer-container {
+    width: 100%;
+    padding: 0;
+    background-image: url("../img/nubes.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  /* line 275, dev/scss/style.scss */
+  .footer-container__infoContainer {
+    padding-top: 3rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 280, dev/scss/style.scss */
+  .footer-container__title {
+    margin-bottom: 2rem;
+  }
+  /* line 283, dev/scss/style.scss */
+  .footer-container__description {
+    margin: 2rem;
+    padding: 0;
+  }
+  /* line 287, dev/scss/style.scss */
+  .footer-container__menu {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  /* line 291, dev/scss/style.scss */
+  .footer-container__items {
+    margin: 2rem 0;
+  }
+  /* line 294, dev/scss/style.scss */
+  .footer-container__footer {
+    background-color: #f3f1f1ee;
+    width: 100%;
+  }
+  /* line 298, dev/scss/style.scss */
+  .footer-container__footerTitle {
+    color: #1c79be;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  /* line 307, dev/scss/style.scss */
+  .contact-container__description {
+    margin-bottom: 1rem;
+  }
+  /* line 310, dev/scss/style.scss */
+  .contact-container__contactenos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+  /* line 313, dev/scss/style.scss */
+  .contact-container__redes-container, .contact-container__mapContainer {
+    width: 100%;
+  }
+  /* line 317, dev/scss/style.scss */
+  .contact-container__map {
+    height: 400px;
+  }
+  /* line 320, dev/scss/style.scss */
+  .contact-container__nameEmpresa, .contact-container__telefono {
+    margin-right: 2rem;
+  }
+  /* line 326, dev/scss/style.scss */
+  .product-container__info {
+    width: 100%;
+  }
+  /* line 331, dev/scss/style.scss */
+  .catalogo__description {
+    width: 100%;
+  }
+  /* line 334, dev/scss/style.scss */
+  .catalogo__imgContainer {
+    margin: 2rem;
+  }
+  /* line 337, dev/scss/style.scss */
+  .catalogo__title {
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 2rem;
+  }
+  /* line 341, dev/scss/style.scss */
+  .catalogo__price {
+    padding-left: 4rem;
+  }
+  /* line 344, dev/scss/style.scss */
+  .catalogo__linea {
+    margin-left: 4rem;
+  }
+  /* line 347, dev/scss/style.scss */
+  .catalogo__description {
+    padding: 1rem 3rem 2rem;
+  }
+  /* line 351, dev/scss/style.scss */
+  .catalogo__btn {
+    margin-left: 2rem;
+  }
+  /* line 355, dev/scss/style.scss */
+  .specificationPanel {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 358, dev/scss/style.scss */
+  .specificationPanel__description-panel, .specificationPanel__structure {
+    width: 100%;
+    margin: 0;
+    padding: 0  1rem;
+  }
+  /* line 364, dev/scss/style.scss */
+  .specificationPanel__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  /* line 369, dev/scss/style.scss */
+  .specificationPanel__paragraph {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  /* line 374, dev/scss/style.scss */
+  .specificationPanel__linea {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 378, dev/scss/style.scss */
+  .specificationPanel__img-container-celda {
+    width: 50%;
+  }
+  /* line 382, dev/scss/style.scss */
+  .panel {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  /* line 385, dev/scss/style.scss */
+  .panel__title {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+  /* line 390, dev/scss/style.scss */
+  .panel__linea {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 395, dev/scss/style.scss */
+  .panel__price {
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* line 402, dev/scss/style.scss */
+  .header-container {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  /* line 406, dev/scss/style.scss */
+  .header-container__logoContainer {
+    display: none;
+  }
+  /* line 409, dev/scss/style.scss */
+  .header-container__menu {
+    width: 100%;
+  }
+  /* line 413, dev/scss/style.scss */
+  .history-container {
+    width: 100%;
+    margin-top: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 417, dev/scss/style.scss */
+  .history-container__info, .history-container__imgContainer {
+    width: 100%;
+  }
+  /* line 421, dev/scss/style.scss */
+  .history-container__img {
+    width: 60%;
+  }
+  /* line 424, dev/scss/style.scss */
+  .history-container__paragraph {
+    width: 100%;
+  }
+  /* line 427, dev/scss/style.scss */
+  .history-container__linea {
+    width: 50%;
+    margin-left: 2.2rem;
+  }
+  /* line 432, dev/scss/style.scss */
+  .menu {
+    margin-top: 50px;
+  }
+  /* line 434, dev/scss/style.scss */
+  .menu__bar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    background-color: #1c79be;
+  }
+  /* line 442, dev/scss/style.scss */
+  .menu__bar .menu__bt {
+    display: block;
+    padding: 20px 36px;
+    color: #fff;
+    overflow: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* line 451, dev/scss/style.scss */
+  .menu__bar .menu__icons {
+    float: right;
+    font-size: 40px;
+  }
+  /* line 455, dev/scss/style.scss */
+  .menu__navigation {
+    width: 80%;
+    height: calc(100% - 80px);
+    position: fixed;
+    z-index: 999;
+    left: -100%;
+    margin: 0;
+    top: 80px;
+    background-image: url("../img/logo-enicer-vertical.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #1c79be;
+    overflow: scroll;
+  }
+  /* line 471, dev/scss/style.scss */
+  .menu__navigation.active {
+    left: 0;
+  }
+  /* line 475, dev/scss/style.scss */
+  .menu__items {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  /* line 478, dev/scss/style.scss */
+  .menu__items:hover .menu__children {
+    display: none;
+  }
+  /* line 482, dev/scss/style.scss */
+  .menu__icons {
+    color: white;
+  }
+  /* line 485, dev/scss/style.scss */
+  .menu__link {
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+  /* line 490, dev/scss/style.scss */
+  .menu__children {
+    width: 100%;
+    position: relative;
+  }
+  /* line 494, dev/scss/style.scss */
+  .menu__linkChildren {
+    margin-left: 20px;
+  }
+  /* line 497, dev/scss/style.scss */
+  .menu__caret {
+    float: right;
+  }
+  /* line 501, dev/scss/style.scss */
+  .footer-container {
+    width: 100%;
+    padding: 0;
+    background-image: url("../img/nubes.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  /* line 509, dev/scss/style.scss */
+  .footer-container__infoContainer {
+    padding-top: 3rem;
+    display: block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  /* line 515, dev/scss/style.scss */
+  .footer-container__title {
+    margin-bottom: 2rem;
+  }
+  /* line 518, dev/scss/style.scss */
+  .footer-container__description {
+    margin-left: 2rem;
+    padding: 0;
+    text-align: center;
+  }
+  /* line 523, dev/scss/style.scss */
+  .footer-container__menu {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  /* line 530, dev/scss/style.scss */
+  .footer-container__items {
+    margin: 1rem 0;
+  }
+  /* line 533, dev/scss/style.scss */
+  .footer-container__footer {
+    background-color: #f3f1f1ee;
+    width: 100%;
+  }
+  /* line 537, dev/scss/style.scss */
+  .footer-container__footerTitle {
+    color: #1c79be;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  /* line 545, dev/scss/style.scss */
+  .contact-container {
+    width: 100%;
+  }
+  /* line 547, dev/scss/style.scss */
+  .contact-container__backgroundContactenos {
+    height: 100px;
+    margin: 2rem 0;
+  }
+  /* line 551, dev/scss/style.scss */
+  .contact-container__form {
+    width: 100%;
+  }
+  /* line 554, dev/scss/style.scss */
+  .contact-container__formInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin: 0 1rem;
+  }
+  /* line 558, dev/scss/style.scss */
+  .contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+  /* line 567, dev/scss/style.scss */
+  .contact-container__mensaje {
+    height: 200px;
+    background-size: 50%;
+  }
+  /* line 573, dev/scss/style.scss */
+  .contact-container__contactenos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+  /* line 576, dev/scss/style.scss */
+  .contact-container__redes-container, .contact-container__mapContainer {
+    width: 100%;
+  }
+  /* line 580, dev/scss/style.scss */
+  .contact-container__subtitle {
+    margin: 0 2rem;
+  }
+  /* line 583, dev/scss/style.scss */
+  .contact-container__description {
+    margin-left: 3rem;
+  }
+  /* line 586, dev/scss/style.scss */
+  .contact-container__telefonosContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 589, dev/scss/style.scss */
+  .contact-container__map {
+    height: 300px;
+  }
+  /* line 593, dev/scss/style.scss */
+  .product-container {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 596, dev/scss/style.scss */
+  .product-container__info {
+    width: 100%;
+  }
+  /* line 600, dev/scss/style.scss */
+  .catalogo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+  /* line 602, dev/scss/style.scss */
+  .catalogo__infoContainer, .catalogo__imgContainer, .catalogo__description {
+    width: 100%;
+  }
+  /* line 607, dev/scss/style.scss */
+  .catalogo__imgContainer {
+    margin: 0 0 3rem 0;
+  }
+  /* line 610, dev/scss/style.scss */
+  .catalogo__img {
+    width: 100%;
+    height: 400px;
+  }
+  /* line 614, dev/scss/style.scss */
+  .catalogo__title {
+    padding: 1rem 1rem 1rem 2rem;
+    font-size: 2rem;
+  }
+  /* line 618, dev/scss/style.scss */
+  .catalogo__price {
+    padding-left: 4rem;
+  }
+  /* line 621, dev/scss/style.scss */
+  .catalogo__linea {
+    margin-left: 4rem;
+  }
+  /* line 624, dev/scss/style.scss */
+  .catalogo__description {
+    padding: 1rem 3rem 2rem;
+  }
+  /* line 628, dev/scss/style.scss */
+  .catalogo__btn {
+    margin-left: 2rem;
+  }
+  /* line 632, dev/scss/style.scss */
+  .specificationPanel {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 635, dev/scss/style.scss */
+  .specificationPanel__description-panel, .specificationPanel__structure {
+    width: 100%;
+    margin: 0;
+    padding: 0  1rem;
+  }
+  /* line 641, dev/scss/style.scss */
+  .specificationPanel__title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  /* line 646, dev/scss/style.scss */
+  .specificationPanel__paragraph {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  /* line 651, dev/scss/style.scss */
+  .specificationPanel__linea {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 656, dev/scss/style.scss */
+  .panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 100%;
+    padding: 1rem 0 0;
+  }
+  /* line 660, dev/scss/style.scss */
+  .panel__information, .panel__img-container, .panel__img {
+    width: 100%;
+  }
+  /* line 665, dev/scss/style.scss */
+  .panel__title {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+  /* line 670, dev/scss/style.scss */
+  .panel__linea {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 675, dev/scss/style.scss */
+  .panel__subtitle {
+    padding: 0 2rem;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-align: center;
+            align-items: center;
+    font-size: 1.5rem;
+  }
+  /* line 682, dev/scss/style.scss */
+  .panel__respuesta {
+    margin-top: 1rem;
+  }
+  /* line 685, dev/scss/style.scss */
+  .panel__price {
+    margin: 2rem 0 0;
+    text-align: center;
+    background-color: white;
+    padding: 1rem;
+  }
+}
