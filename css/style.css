@@ -59,6 +59,16 @@
   background-color: #6dc82b;
 }
 
+/* line 33, dev/scss/basic/_class-basic.scss */
+.background-White {
+  background-color: white;
+}
+
+/* line 36, dev/scss/basic/_class-basic.scss */
+.background-grey {
+  background-color: #f3f1f1ee;
+}
+
 /* line 1, dev/scss/componentes/_menu.scss */
 .menu {
   -webkit-box-align: center;
@@ -1066,7 +1076,112 @@
   margin-bottom: 2rem;
 }
 
-/* line 26, dev/scss/style.scss */
+/* line 1, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua {
+  margin-top: 4rem;
+}
+
+/* line 3, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__container {
+  padding: 3rem 0;
+}
+
+/* line 6, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__info-container, .bombaAgua__slider-container {
+  width: 50%;
+}
+
+/* line 10, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__imgContainer {
+  widows: 30%;
+  align-self: center;
+}
+
+/* line 14, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__caracteristica {
+  width: 70%;
+}
+
+/* line 17, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__info-container, .bombaAgua__caracteristica {
+  align-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 22, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__title, .bombaAgua__price {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* line 28, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__paragraph, .bombaAgua__description {
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+/* line 33, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__items {
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+/* line 39, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__respuesta {
+  margin-left: 1rem;
+  font-weight: lighter;
+}
+
+/* line 43, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__linea {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 48, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__caracteristica-container {
+  padding: 4rem 0;
+  background-color: #f3f1f1ee;
+}
+
+/* line 52, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__tabla-container {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 4rem 0;
+}
+
+/* line 58, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__tabla {
+  margin-top: 2rem;
+  box-shadow: 0 0 10px 2px black;
+}
+
+/* line 62, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__header {
+  padding: 1rem;
+  text-transform: capitalize;
+  background-color: #1c79be;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* line 69, dev/scss/componentes/_bombaAgua.scss */
+.bombaAgua__columnas {
+  text-align: center;
+  padding: .5rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* line 27, dev/scss/style.scss */
 .header-container {
   margin-bottom: 2rem;
   margin-top: 1rem;
@@ -1074,34 +1189,34 @@
           align-items: center;
 }
 
-/* line 30, dev/scss/style.scss */
+/* line 31, dev/scss/style.scss */
 .header-container__menu {
   width: 70%;
 }
 
-/* line 33, dev/scss/style.scss */
+/* line 34, dev/scss/style.scss */
 .header-container__logoContainer {
   width: 30%;
 }
 
-/* line 36, dev/scss/style.scss */
+/* line 37, dev/scss/style.scss */
 .header-container__titleContainer {
   width: 60%;
   align-self: flex-end;
   margin: 1rem;
 }
 
-/* line 41, dev/scss/style.scss */
+/* line 42, dev/scss/style.scss */
 .header-container__imgContainer {
   width: 40%;
 }
 
-/* line 44, dev/scss/style.scss */
+/* line 45, dev/scss/style.scss */
 .header-container__img {
   width: 100%;
 }
 
-/* line 47, dev/scss/style.scss */
+/* line 48, dev/scss/style.scss */
 .header-container__title {
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, from(green), to(yellow));
@@ -1112,7 +1227,7 @@
   font-size: 3rem;
 }
 
-/* line 55, dev/scss/style.scss */
+/* line 56, dev/scss/style.scss */
 .header-container__subtitle {
   font-weight: lighter;
   font-size: 1.2rem;
@@ -1124,24 +1239,24 @@
   color: transparent;
 }
 
-/* line 65, dev/scss/style.scss */
+/* line 66, dev/scss/style.scss */
 .slider {
   width: 100%;
 }
 
-/* line 67, dev/scss/style.scss */
+/* line 68, dev/scss/style.scss */
 .slider__img {
   width: 100%;
   height: 900px;
 }
 
-/* line 72, dev/scss/style.scss */
+/* line 73, dev/scss/style.scss */
 .history-container {
   padding: 4rem 0;
   background-color: #f3f1f1ee;
 }
 
-/* line 75, dev/scss/style.scss */
+/* line 76, dev/scss/style.scss */
 .history-container__info {
   -webkit-box-pack: center;
           justify-content: center;
@@ -1149,19 +1264,19 @@
           align-items: center;
 }
 
-/* line 79, dev/scss/style.scss */
+/* line 80, dev/scss/style.scss */
 .history-container__title {
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 83, dev/scss/style.scss */
+/* line 84, dev/scss/style.scss */
 .history-container__subtitle {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 87, dev/scss/style.scss */
+/* line 88, dev/scss/style.scss */
 .history-container__linea {
   width: 20%;
   margin-left: 2.2rem;
@@ -1169,44 +1284,44 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 95, dev/scss/style.scss */
+  /* line 96, dev/scss/style.scss */
   .header-container {
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 99, dev/scss/style.scss */
+  /* line 100, dev/scss/style.scss */
   .header-container__logoContainer {
     display: none;
     width: 0;
   }
-  /* line 103, dev/scss/style.scss */
+  /* line 104, dev/scss/style.scss */
   .header-container__menu {
     width: 100%;
   }
-  /* line 107, dev/scss/style.scss */
+  /* line 108, dev/scss/style.scss */
   .history-container {
     width: 100%;
   }
-  /* line 110, dev/scss/style.scss */
+  /* line 111, dev/scss/style.scss */
   .history-container__title {
     font-size: 1.5rem;
     margin-left: 2rem;
   }
-  /* line 114, dev/scss/style.scss */
+  /* line 115, dev/scss/style.scss */
   .history-container__paragraph {
     width: 100%;
     padding: 1rem 2rem;
   }
-  /* line 118, dev/scss/style.scss */
+  /* line 119, dev/scss/style.scss */
   .history-container__imgContainer {
     width: 100%;
   }
-  /* line 122, dev/scss/style.scss */
+  /* line 123, dev/scss/style.scss */
   .menu {
     margin-top: 50px;
   }
-  /* line 124, dev/scss/style.scss */
+  /* line 125, dev/scss/style.scss */
   .menu__bar {
     display: block;
     width: 100%;
@@ -1215,7 +1330,7 @@
     top: 0;
     background-color: #1c79be;
   }
-  /* line 132, dev/scss/style.scss */
+  /* line 133, dev/scss/style.scss */
   .menu__bar .menu__bt {
     display: block;
     padding: 20px 36px;
@@ -1225,12 +1340,12 @@
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 141, dev/scss/style.scss */
+  /* line 142, dev/scss/style.scss */
   .menu__bar .menu__icons {
     float: right;
     font-size: 3rem;
   }
-  /* line 145, dev/scss/style.scss */
+  /* line 146, dev/scss/style.scss */
   .menu__navigation {
     width: 80%;
     height: calc(100% - 80px);
@@ -1248,44 +1363,44 @@
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  /* line 162, dev/scss/style.scss */
+  /* line 163, dev/scss/style.scss */
   .menu__navigation.active {
     left: 0;
   }
-  /* line 166, dev/scss/style.scss */
+  /* line 167, dev/scss/style.scss */
   .menu__items {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  /* line 169, dev/scss/style.scss */
+  /* line 170, dev/scss/style.scss */
   .menu__items:hover .menu__children {
     display: none;
   }
-  /* line 173, dev/scss/style.scss */
+  /* line 174, dev/scss/style.scss */
   .menu__icons {
     color: white;
   }
-  /* line 176, dev/scss/style.scss */
+  /* line 177, dev/scss/style.scss */
   .menu__link {
     color: white;
     font-weight: bold;
     display: block;
     font-size: 1.5rem;
   }
-  /* line 182, dev/scss/style.scss */
+  /* line 183, dev/scss/style.scss */
   .menu__children {
     width: 100%;
     position: relative;
   }
-  /* line 186, dev/scss/style.scss */
+  /* line 187, dev/scss/style.scss */
   .menu__linkChildren {
     margin-left: 20px;
   }
-  /* line 189, dev/scss/style.scss */
+  /* line 190, dev/scss/style.scss */
   .menu__caret {
     float: right;
   }
-  /* line 193, dev/scss/style.scss */
+  /* line 194, dev/scss/style.scss */
   .footer-container {
     width: 100%;
     padding: 0;
@@ -1293,36 +1408,36 @@
     background-repeat: repeat;
     background-size: cover;
   }
-  /* line 201, dev/scss/style.scss */
+  /* line 202, dev/scss/style.scss */
   .footer-container__infoContainer {
     padding-top: 3rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  /* line 206, dev/scss/style.scss */
+  /* line 207, dev/scss/style.scss */
   .footer-container__title {
     margin-bottom: 2rem;
   }
-  /* line 209, dev/scss/style.scss */
+  /* line 210, dev/scss/style.scss */
   .footer-container__description {
     margin: 2rem;
     padding: 0;
   }
-  /* line 213, dev/scss/style.scss */
+  /* line 214, dev/scss/style.scss */
   .footer-container__menu {
     margin-bottom: 2rem;
     padding: 0;
   }
-  /* line 217, dev/scss/style.scss */
+  /* line 218, dev/scss/style.scss */
   .footer-container__items {
     margin: 2rem 0;
   }
-  /* line 220, dev/scss/style.scss */
+  /* line 221, dev/scss/style.scss */
   .footer-container__footer {
     background-color: #f3f1f1ee;
     width: 100%;
   }
-  /* line 224, dev/scss/style.scss */
+  /* line 225, dev/scss/style.scss */
   .footer-container__footerTitle {
     color: #1c79be;
     display: -webkit-box;
@@ -1334,230 +1449,252 @@
             align-items: center;
     padding: 1rem;
   }
-  /* line 233, dev/scss/style.scss */
+  /* line 234, dev/scss/style.scss */
   .contact-container__description {
     margin-bottom: 1rem;
   }
-  /* line 236, dev/scss/style.scss */
+  /* line 237, dev/scss/style.scss */
   .contact-container__contactenos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 239, dev/scss/style.scss */
+  /* line 240, dev/scss/style.scss */
   .contact-container__redes-container, .contact-container__mapContainer {
     width: 100%;
   }
-  /* line 243, dev/scss/style.scss */
+  /* line 244, dev/scss/style.scss */
   .contact-container__map {
     height: 400px;
   }
-  /* line 246, dev/scss/style.scss */
+  /* line 247, dev/scss/style.scss */
   .contact-container__nameEmpresa, .contact-container__telefono {
     margin-right: 2rem;
   }
-  /* line 252, dev/scss/style.scss */
+  /* line 253, dev/scss/style.scss */
   .product-container__info {
     width: 100%;
   }
-  /* line 257, dev/scss/style.scss */
+  /* line 258, dev/scss/style.scss */
   .catalogo__infoContainer {
     width: 100%;
   }
-  /* line 260, dev/scss/style.scss */
+  /* line 261, dev/scss/style.scss */
   .catalogo__imgContainer {
     align-self: center;
   }
-  /* line 263, dev/scss/style.scss */
+  /* line 264, dev/scss/style.scss */
   .catalogo__description {
     width: 100%;
   }
-  /* line 266, dev/scss/style.scss */
+  /* line 267, dev/scss/style.scss */
   .catalogo__imgContainer {
     margin: 2rem;
   }
-  /* line 269, dev/scss/style.scss */
+  /* line 270, dev/scss/style.scss */
   .catalogo__title {
     padding: 1rem 1rem 1rem 2rem;
     font-size: 2rem;
   }
-  /* line 273, dev/scss/style.scss */
+  /* line 274, dev/scss/style.scss */
   .catalogo__price {
     padding-left: 4rem;
   }
-  /* line 276, dev/scss/style.scss */
+  /* line 277, dev/scss/style.scss */
   .catalogo__linea {
     margin-left: 4rem;
   }
-  /* line 279, dev/scss/style.scss */
+  /* line 280, dev/scss/style.scss */
   .catalogo__description {
     padding: 1rem 3rem 2rem;
   }
-  /* line 283, dev/scss/style.scss */
+  /* line 284, dev/scss/style.scss */
   .catalogo__btn {
     margin-left: 2rem;
   }
-  /* line 287, dev/scss/style.scss */
+  /* line 288, dev/scss/style.scss */
   .specificationPanel {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 290, dev/scss/style.scss */
+  /* line 291, dev/scss/style.scss */
   .specificationPanel__description-panel, .specificationPanel__structure {
     width: 100%;
     margin: 0;
     padding: 0  1rem;
   }
-  /* line 296, dev/scss/style.scss */
+  /* line 297, dev/scss/style.scss */
   .specificationPanel__title {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
   }
-  /* line 301, dev/scss/style.scss */
+  /* line 302, dev/scss/style.scss */
   .specificationPanel__paragraph {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
   }
-  /* line 306, dev/scss/style.scss */
+  /* line 307, dev/scss/style.scss */
   .specificationPanel__linea {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 310, dev/scss/style.scss */
+  /* line 311, dev/scss/style.scss */
   .specificationPanel__img-container-celda {
     width: 50%;
   }
-  /* line 314, dev/scss/style.scss */
+  /* line 315, dev/scss/style.scss */
   .panel {
     width: 100%;
     padding: 1rem 0;
   }
-  /* line 317, dev/scss/style.scss */
+  /* line 318, dev/scss/style.scss */
   .panel__title {
     text-align: center;
     margin-top: 2rem;
     padding: 0 2rem;
   }
-  /* line 322, dev/scss/style.scss */
+  /* line 323, dev/scss/style.scss */
   .panel__linea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 327, dev/scss/style.scss */
+  /* line 328, dev/scss/style.scss */
   .panel__price {
     margin: 2rem 0;
     text-align: center;
   }
-  /* line 332, dev/scss/style.scss */
+  /* line 333, dev/scss/style.scss */
   .bateria {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 4rem;
   }
-  /* line 339, dev/scss/style.scss */
+  /* line 340, dev/scss/style.scss */
   .bateria-type__bateria-container {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 343, dev/scss/style.scss */
+  /* line 344, dev/scss/style.scss */
   .bateria-type__description, .bateria-type__img {
     width: 100%;
   }
-  /* line 348, dev/scss/style.scss */
+  /* line 349, dev/scss/style.scss */
   .sliderSyncing {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 354, dev/scss/style.scss */
+  /* line 355, dev/scss/style.scss */
   .preguntas__containerPreguntas {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 357, dev/scss/style.scss */
+  /* line 358, dev/scss/style.scss */
   .preguntas__imgContainer, .preguntas__accordionContainer {
     width: 100%;
   }
-  /* line 363, dev/scss/style.scss */
+  /* line 364, dev/scss/style.scss */
   .inversor__caracteristica {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 366, dev/scss/style.scss */
+  /* line 367, dev/scss/style.scss */
   .inversor__patallaContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 369, dev/scss/style.scss */
+  /* line 370, dev/scss/style.scss */
   .inversor__imgContainer, .inversor__info {
     width: 100%;
   }
-  /* line 373, dev/scss/style.scss */
+  /* line 374, dev/scss/style.scss */
   .inversor__info {
     margin: 2rem 0;
+  }
+  /* line 379, dev/scss/style.scss */
+  .bombaAgua__container {
+    width: 100%;
+  }
+  /* line 382, dev/scss/style.scss */
+  .bombaAgua__info-container {
+    margin-right: 2rem;
+  }
+  /* line 385, dev/scss/style.scss */
+  .bombaAgua__caracteristica-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 388, dev/scss/style.scss */
+  .bombaAgua__caracteristica {
+    width: 100%;
+  }
+  /* line 391, dev/scss/style.scss */
+  .bombaAgua__tabla-container {
+    margin: 0 2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
-  /* line 380, dev/scss/style.scss */
+  /* line 398, dev/scss/style.scss */
   .header-container {
     width: 100%;
     display: block;
     position: relative;
   }
-  /* line 384, dev/scss/style.scss */
+  /* line 402, dev/scss/style.scss */
   .header-container__logoContainer {
     display: none;
   }
-  /* line 387, dev/scss/style.scss */
+  /* line 405, dev/scss/style.scss */
   .header-container__menu {
     width: 100%;
   }
-  /* line 392, dev/scss/style.scss */
+  /* line 410, dev/scss/style.scss */
   .slider__img {
     width: 100%;
     height: 500px;
   }
-  /* line 397, dev/scss/style.scss */
+  /* line 415, dev/scss/style.scss */
   .history-container {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 401, dev/scss/style.scss */
+  /* line 419, dev/scss/style.scss */
   .history-container__info, .history-container__imgContainer {
     width: 100%;
   }
-  /* line 405, dev/scss/style.scss */
+  /* line 423, dev/scss/style.scss */
   .history-container__img {
     width: 60%;
   }
-  /* line 408, dev/scss/style.scss */
+  /* line 426, dev/scss/style.scss */
   .history-container__paragraph {
     width: 100%;
   }
-  /* line 411, dev/scss/style.scss */
+  /* line 429, dev/scss/style.scss */
   .history-container__linea {
     width: 50%;
     margin-left: 2.2rem;
   }
-  /* line 416, dev/scss/style.scss */
+  /* line 434, dev/scss/style.scss */
   .menu {
     margin-top: 50px;
   }
-  /* line 418, dev/scss/style.scss */
+  /* line 436, dev/scss/style.scss */
   .menu__bar {
     display: block;
     width: 100%;
@@ -1566,7 +1703,7 @@
     top: 0;
     background-color: #1c79be;
   }
-  /* line 426, dev/scss/style.scss */
+  /* line 444, dev/scss/style.scss */
   .menu__bar .menu__bt {
     display: block;
     padding: 20px 36px;
@@ -1576,12 +1713,12 @@
     font-weight: bold;
     text-decoration: none;
   }
-  /* line 435, dev/scss/style.scss */
+  /* line 453, dev/scss/style.scss */
   .menu__bar .menu__icons {
     float: right;
     font-size: 40px;
   }
-  /* line 439, dev/scss/style.scss */
+  /* line 457, dev/scss/style.scss */
   .menu__navigation {
     width: 80%;
     height: calc(100% - 80px);
@@ -1597,44 +1734,44 @@
     background-color: #1c79be;
     overflow: scroll;
   }
-  /* line 455, dev/scss/style.scss */
+  /* line 473, dev/scss/style.scss */
   .menu__navigation.active {
     left: 0;
   }
-  /* line 459, dev/scss/style.scss */
+  /* line 477, dev/scss/style.scss */
   .menu__items {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
-  /* line 462, dev/scss/style.scss */
+  /* line 480, dev/scss/style.scss */
   .menu__items:hover .menu__children {
     display: none;
   }
-  /* line 466, dev/scss/style.scss */
+  /* line 484, dev/scss/style.scss */
   .menu__icons {
     color: white;
   }
-  /* line 469, dev/scss/style.scss */
+  /* line 487, dev/scss/style.scss */
   .menu__link {
     color: white;
     font-weight: bold;
     display: block;
     font-size: 1rem;
   }
-  /* line 475, dev/scss/style.scss */
+  /* line 493, dev/scss/style.scss */
   .menu__children {
     width: 100%;
     position: relative;
   }
-  /* line 479, dev/scss/style.scss */
+  /* line 497, dev/scss/style.scss */
   .menu__linkChildren {
     margin-left: 20px;
   }
-  /* line 482, dev/scss/style.scss */
+  /* line 500, dev/scss/style.scss */
   .menu__caret {
     float: right;
   }
-  /* line 486, dev/scss/style.scss */
+  /* line 504, dev/scss/style.scss */
   .footer-container {
     width: 100%;
     padding: 0;
@@ -1642,24 +1779,24 @@
     background-repeat: repeat;
     background-size: cover;
   }
-  /* line 494, dev/scss/style.scss */
+  /* line 512, dev/scss/style.scss */
   .footer-container__infoContainer {
     padding-top: 3rem;
     display: block;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
-  /* line 500, dev/scss/style.scss */
+  /* line 518, dev/scss/style.scss */
   .footer-container__title {
     margin-bottom: 2rem;
   }
-  /* line 503, dev/scss/style.scss */
+  /* line 521, dev/scss/style.scss */
   .footer-container__description {
     margin-left: 2rem;
     padding: 0;
     text-align: center;
   }
-  /* line 508, dev/scss/style.scss */
+  /* line 526, dev/scss/style.scss */
   .footer-container__menu {
     display: -webkit-box;
     display: flex;
@@ -1671,16 +1808,16 @@
     padding: 0;
     margin-bottom: 2rem;
   }
-  /* line 515, dev/scss/style.scss */
+  /* line 533, dev/scss/style.scss */
   .footer-container__items {
     margin: 1rem 0;
   }
-  /* line 518, dev/scss/style.scss */
+  /* line 536, dev/scss/style.scss */
   .footer-container__footer {
     background-color: #f3f1f1ee;
     width: 100%;
   }
-  /* line 522, dev/scss/style.scss */
+  /* line 540, dev/scss/style.scss */
   .footer-container__footerTitle {
     color: #1c79be;
     display: -webkit-box;
@@ -1692,152 +1829,152 @@
             align-items: center;
     padding: 1rem;
   }
-  /* line 530, dev/scss/style.scss */
+  /* line 548, dev/scss/style.scss */
   .contact-container {
     width: 100%;
   }
-  /* line 532, dev/scss/style.scss */
+  /* line 550, dev/scss/style.scss */
   .contact-container__backgroundContactenos {
     height: 100px;
     margin: 2rem 0;
   }
-  /* line 536, dev/scss/style.scss */
+  /* line 554, dev/scss/style.scss */
   .contact-container__form {
     width: 100%;
   }
-  /* line 539, dev/scss/style.scss */
+  /* line 557, dev/scss/style.scss */
   .contact-container__formInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
     margin: 0 1rem;
   }
-  /* line 543, dev/scss/style.scss */
+  /* line 561, dev/scss/style.scss */
   .contact-container__nameEmpresa, .contact-container__namePersona, .contact-container__telefono, .contact-container__email {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
   }
-  /* line 552, dev/scss/style.scss */
+  /* line 570, dev/scss/style.scss */
   .contact-container__mensaje {
     height: 200px;
     background-size: 50%;
   }
-  /* line 558, dev/scss/style.scss */
+  /* line 576, dev/scss/style.scss */
   .contact-container__contactenos {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 561, dev/scss/style.scss */
+  /* line 579, dev/scss/style.scss */
   .contact-container__redes-container, .contact-container__mapContainer {
     width: 100%;
   }
-  /* line 565, dev/scss/style.scss */
+  /* line 583, dev/scss/style.scss */
   .contact-container__subtitle {
     margin: 0 2rem;
   }
-  /* line 568, dev/scss/style.scss */
+  /* line 586, dev/scss/style.scss */
   .contact-container__description {
     margin-left: 3rem;
   }
-  /* line 571, dev/scss/style.scss */
+  /* line 589, dev/scss/style.scss */
   .contact-container__telefonosContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 574, dev/scss/style.scss */
+  /* line 592, dev/scss/style.scss */
   .contact-container__map {
     height: 300px;
   }
-  /* line 578, dev/scss/style.scss */
+  /* line 596, dev/scss/style.scss */
   .product-container {
     padding: 0;
     margin: 0;
   }
-  /* line 581, dev/scss/style.scss */
+  /* line 599, dev/scss/style.scss */
   .product-container__info {
     width: 100%;
   }
-  /* line 585, dev/scss/style.scss */
+  /* line 603, dev/scss/style.scss */
   .catalogo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 587, dev/scss/style.scss */
+  /* line 605, dev/scss/style.scss */
   .catalogo__infoContainer, .catalogo__imgContainer, .catalogo__description {
     width: 100%;
   }
-  /* line 592, dev/scss/style.scss */
+  /* line 610, dev/scss/style.scss */
   .catalogo__imgContainer {
     margin: 0 0 3rem 0;
   }
-  /* line 595, dev/scss/style.scss */
+  /* line 613, dev/scss/style.scss */
   .catalogo__img {
     width: 100%;
     height: 400px;
   }
-  /* line 599, dev/scss/style.scss */
+  /* line 617, dev/scss/style.scss */
   .catalogo__title {
     text-align: center;
     padding: 0;
     font-size: 2rem;
   }
-  /* line 604, dev/scss/style.scss */
+  /* line 622, dev/scss/style.scss */
   .catalogo__price {
     padding-left: 3rem;
     margin: 0;
   }
-  /* line 608, dev/scss/style.scss */
+  /* line 626, dev/scss/style.scss */
   .catalogo__linea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
   }
-  /* line 614, dev/scss/style.scss */
+  /* line 632, dev/scss/style.scss */
   .catalogo__description {
     padding: 1rem 3rem 2rem;
   }
-  /* line 618, dev/scss/style.scss */
+  /* line 636, dev/scss/style.scss */
   .catalogo__btn {
     margin-left: 2rem;
     margin-bottom: 2rem;
   }
-  /* line 623, dev/scss/style.scss */
+  /* line 641, dev/scss/style.scss */
   .specificationPanel {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 626, dev/scss/style.scss */
+  /* line 644, dev/scss/style.scss */
   .specificationPanel__description-panel, .specificationPanel__structure {
     width: 100%;
     margin: 0;
     padding: 0  1rem;
   }
-  /* line 632, dev/scss/style.scss */
+  /* line 650, dev/scss/style.scss */
   .specificationPanel__title {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 1rem;
   }
-  /* line 637, dev/scss/style.scss */
+  /* line 655, dev/scss/style.scss */
   .specificationPanel__paragraph {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
   }
-  /* line 642, dev/scss/style.scss */
+  /* line 660, dev/scss/style.scss */
   .specificationPanel__linea {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 647, dev/scss/style.scss */
+  /* line 665, dev/scss/style.scss */
   .panel {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1845,23 +1982,23 @@
     width: 100%;
     padding: 1rem 0 0;
   }
-  /* line 651, dev/scss/style.scss */
+  /* line 669, dev/scss/style.scss */
   .panel__information, .panel__img-container, .panel__img {
     width: 100%;
   }
-  /* line 656, dev/scss/style.scss */
+  /* line 674, dev/scss/style.scss */
   .panel__title {
     text-align: center;
     margin-top: 2rem;
     padding: 0 2rem;
   }
-  /* line 661, dev/scss/style.scss */
+  /* line 679, dev/scss/style.scss */
   .panel__linea {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 666, dev/scss/style.scss */
+  /* line 684, dev/scss/style.scss */
   .panel__subtitle {
     padding: 0 2rem;
     display: -webkit-box;
@@ -1873,87 +2010,144 @@
             align-items: center;
     font-size: 1.5rem;
   }
-  /* line 673, dev/scss/style.scss */
+  /* line 691, dev/scss/style.scss */
   .panel__respuesta {
     margin-top: 1rem;
   }
-  /* line 676, dev/scss/style.scss */
+  /* line 694, dev/scss/style.scss */
   .panel__price {
     margin: 2rem 0 0;
     text-align: center;
     background-color: white;
     padding: 1rem;
   }
-  /* line 683, dev/scss/style.scss */
+  /* line 701, dev/scss/style.scss */
   .bateria {
     width: 80%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 4rem;
   }
-  /* line 690, dev/scss/style.scss */
+  /* line 708, dev/scss/style.scss */
   .bateria-type__bateria-container {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 694, dev/scss/style.scss */
+  /* line 712, dev/scss/style.scss */
   .bateria-type__description, .bateria-type__img {
     width: 100%;
   }
-  /* line 699, dev/scss/style.scss */
+  /* line 717, dev/scss/style.scss */
   .sliderSyncing {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 705, dev/scss/style.scss */
+  /* line 723, dev/scss/style.scss */
   .preguntas__containerPreguntas {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 709, dev/scss/style.scss */
+  /* line 727, dev/scss/style.scss */
   .preguntas__imgContainer, .preguntas__accordionContainer {
     width: 100%;
   }
-  /* line 713, dev/scss/style.scss */
+  /* line 731, dev/scss/style.scss */
   .preguntas__accordionContainer {
     margin-left: 0;
     padding: 0 2rem;
   }
-  /* line 718, dev/scss/style.scss */
+  /* line 736, dev/scss/style.scss */
   .inversor {
     margin: 1rem 0;
   }
-  /* line 720, dev/scss/style.scss */
+  /* line 738, dev/scss/style.scss */
   .inversor__caracteristica {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-  /* line 723, dev/scss/style.scss */
+  /* line 741, dev/scss/style.scss */
   .inversor__patallaContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
   }
-  /* line 726, dev/scss/style.scss */
+  /* line 744, dev/scss/style.scss */
   .inversor__imgContainer, .inversor__info {
     width: 100%;
   }
-  /* line 730, dev/scss/style.scss */
+  /* line 748, dev/scss/style.scss */
   .inversor__info {
     margin: 2rem 0;
   }
-  /* line 733, dev/scss/style.scss */
+  /* line 751, dev/scss/style.scss */
   .inversor__ahorro {
     padding: 2rem 0;
   }
-  /* line 736, dev/scss/style.scss */
+  /* line 754, dev/scss/style.scss */
   .inversor__lineaAhorro {
     width: 80%;
+  }
+  /* line 759, dev/scss/style.scss */
+  .bombaAgua__container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  /* line 763, dev/scss/style.scss */
+  .bombaAgua__slider-container, .bombaAgua__info-container {
+    width: 100%;
+  }
+  /* line 767, dev/scss/style.scss */
+  .bombaAgua__info-container {
+    margin: 2rem 0;
+  }
+  /* line 770, dev/scss/style.scss */
+  .bombaAgua__title {
+    font-size: 1.5rem;
+    padding: 4rem 0 0;
+  }
+  /* line 774, dev/scss/style.scss */
+  .bombaAgua__caracteristica-container {
+    padding: 0;
+  }
+  /* line 777, dev/scss/style.scss */
+  .bombaAgua__caracteristica {
+    width: 100%;
+  }
+  /* line 780, dev/scss/style.scss */
+  .bombaAgua__items {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-left: 0;
+  }
+  /* line 785, dev/scss/style.scss */
+  .bombaAgua__respuesta {
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  /* line 789, dev/scss/style.scss */
+  .bombaAgua__tabla-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+  /* line 795, dev/scss/style.scss */
+  .bombaAgua__tabla {
+    margin-top: 3rem;
+  }
+  /* line 798, dev/scss/style.scss */
+  .bombaAgua__header, .bombaAgua__columnas {
+    font-size: 1rem;
   }
 }
