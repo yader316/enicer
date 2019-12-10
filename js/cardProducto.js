@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('.card-productoContainer-container').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 9000,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1030,
