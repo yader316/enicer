@@ -2123,28 +2123,32 @@
             flex-direction: column;
   }
   /* line 768, dev/scss/style.scss */
-  .bombaAgua__slider-container, .bombaAgua__info-container {
+  .bombaAgua__slider-container, .bombaAgua__info-container, .bombaAgua__imgContainer, .bombaAgua__img {
     width: 100%;
   }
-  /* line 772, dev/scss/style.scss */
+  /* line 774, dev/scss/style.scss */
+  .bombaAgua__img {
+    margin-bottom: 3rem;
+  }
+  /* line 777, dev/scss/style.scss */
   .bombaAgua__info-container {
     margin: 2rem 0;
   }
-  /* line 775, dev/scss/style.scss */
+  /* line 780, dev/scss/style.scss */
   .bombaAgua__title {
     font-size: 1.5rem;
     margin: 0;
     padding: 4rem 0 0;
   }
-  /* line 780, dev/scss/style.scss */
+  /* line 785, dev/scss/style.scss */
   .bombaAgua__caracteristica-container {
     padding: 0;
   }
-  /* line 783, dev/scss/style.scss */
+  /* line 788, dev/scss/style.scss */
   .bombaAgua__information {
     width: 100%;
   }
-  /* line 786, dev/scss/style.scss */
+  /* line 791, dev/scss/style.scss */
   .bombaAgua__items {
     display: -webkit-box;
     display: flex;
@@ -2154,25 +2158,25 @@
     margin-left: 0;
     font-size: 1rem;
   }
-  /* line 792, dev/scss/style.scss */
+  /* line 797, dev/scss/style.scss */
   .bombaAgua__respuesta {
     text-align: center;
     margin-bottom: .5rem;
   }
-  /* line 798, dev/scss/style.scss */
+  /* line 803, dev/scss/style.scss */
   .tabla-container__title {
     width: 100%;
   }
-  /* line 801, dev/scss/style.scss */
+  /* line 806, dev/scss/style.scss */
   .tabla-container__tabla {
     display: none;
   }
-  /* line 804, dev/scss/style.scss */
+  /* line 809, dev/scss/style.scss */
   .tabla-container__imgContainer {
     display: block;
     width: 100%;
   }
-  /* line 808, dev/scss/style.scss */
+  /* line 813, dev/scss/style.scss */
   .tabla-container__img {
     width: 100%;
     height: 400px;
