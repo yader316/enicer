@@ -31,7 +31,6 @@
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="sistemaRespaldo.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> sistema de respaldo</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="sistemaConectadoRed.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> sistema conectado a la red</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="sistemaHidrido.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> sistema solar almacenamiento hidrido</a></li>
-                  <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="calentadorSolar.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> calentador solar de agua</a></li>
                   <li class="menu__items menu__itemsChildren"><a class="menu__link menu__linkChildren" href="sistemaBombaAgua.html"><span class="menu__icons menu__iconsChildren icon-dot"></span> bomba de agua solar</a></li>
                 </ul>
               </li>
@@ -52,20 +51,20 @@
     </header>
     <section class="contact-container d-flex-direction">
       <div class="contact-container__backgroundContactenos"></div>
-      <div class="contact-container__form container d-flex-direction">
-        <form class="contact-container__formInfo d-flex" action="" method="method">
-          <input class="contact-container__nameEmpresa" type="text" placeholder="Nombre de la empresa">
-          <input class="contact-container__namePersona" type="text" placeholder="Nombre del representante">
-        </form>
-        <form class="contact-container__formInfo d-flex" action="" method="method">
-          <input class="contact-container__telefono" type="tel" name="" placeholder="505 0000-0000" pattern="[0-9]{3} [0-9]{4}[-][0-9]{4}" title="Un número de teléfono válido consta de un código de área de 3 dígitos, un espacio, los cuatros primeros dígitos del número, un espacio o un guión (-) y cuatro dígitos más." required>
-          <input class="contact-container__email" type="email" placeholder="example@example.com" required>
-        </form>
-        <form class="contact-container__formTxtArea d-flex" action="" method="method">
-          <textarea class="contact-container__mensaje" name="" placeholder="Mensaje"></textarea>
-        </form>
-        <button class="contact-container__btn buttonStyle">enviar</button>
-      </div>
+      <form class="contact-container__form container d-flex-direction" action="" method="method">
+        <div class="contact-container__formInfo d-flex">
+          <input class="contact-container__nameEmpresa" type="text" placeholder="Nombre de la empresa" name="">
+          <input class="contact-container__namePersona" type="text" placeholder="Nombre y Apellido" name="" title="Ingrese su  Nombre y Apellido" required>
+        </div>
+        <div class="contact-container__formInfo d-flex">
+          <input class="contact-container__telefono" type="tel" name="" placeholder="505 0000-0000" pattern="[0-9]{3} [0-9]{4} [0-9]{4}" title="Un número de teléfono válido consta de un código de área de 3 dígitos, un espacio, los cuatros primeros dígitos del número, un espacio y cuatro dígitos más." required>
+          <input class="contact-container__email" type="email" placeholder="example@example.com" name="" title="Ingrese su correo para poder brindarle respuesta" required>
+        </div>
+        <div class="contact-container__formTxtArea d-flex">
+          <textarea class="contact-container__mensaje" name="" placeholder="Envienos un mensaje para poder brindarle una solucion. Muchas gracias por escribirnos" required></textarea>
+        </div>
+        <button class="contact-container__btn buttonStyle" type="submit">enviar </button>
+      </form>
       <div class="contact-container__contactenos d-flex">
         <div class="contact-container__mapContainer">
           <iframe class="contact-container__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.7120465288835!2d-86.22556573587256!3d12.13184393603085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fe7968cf10e1%3A0x2bedf0a15b8c1207!2sVilla%20Austria%2C%20Managua!5e0!3m2!1ses-419!2sni!4v1567807040484!5m2!1ses-419!2sni" frameborder="0"></iframe>
@@ -87,7 +86,7 @@
               </div>
             </div>
             <h2 class="contact-container__subtitle"><span class="contact-container__icons icon-envelop"></span> correo</h2>
-            <p class="contact-container__description">enicer-nic@gmail.com</p>
+            <p class="contact-container__description">enicer.nic505@gmail.com</p>
           </div>
         </div>
       </div>
