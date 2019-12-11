@@ -1468,6 +1468,14 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+  /* line 122, dev/scss/style.scss */
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   /* line 130, dev/scss/style.scss */
   .header-container {
